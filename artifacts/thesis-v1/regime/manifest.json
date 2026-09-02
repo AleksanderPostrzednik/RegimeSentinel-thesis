@@ -1,0 +1,238 @@
+{
+  "artifact_sha256": {
+    "baseline_gate.json": "c6e044d3f7022e9dafced274da9c75a33842828d4576c15c4a164f61bc55ae40",
+    "comparison/BTC-USD.json": "fdb31a27c509a0cd80d9191a55d376cc25762f5a7f256a3f986d3fc051cb3bf6",
+    "comparison/ETH-USD.json": "916465ae572bba62bb5d1d6cee42b1e1e8192ca05a471323a27088ab69802ea5",
+    "fallback_not_ms_garch/BTC-USD/forecasts.json": "bec5fc0439758e5c5d292887ce9c93db5242d9e8f003a29c557e9a5d0cc9dae3",
+    "fallback_not_ms_garch/BTC-USD/summary.json": "6aefcbf777b99aead8cfcf7b741c1948b5ff1a381ac26b8611ab5661aedf7e75",
+    "fallback_not_ms_garch/ETH-USD/forecasts.json": "9c8b4cebc376a6ab4832a1b5d4fbd67cc7ee8335d02acfb80594b97bf9757d64",
+    "fallback_not_ms_garch/ETH-USD/summary.json": "3c3f80569f6abd634834f30b7d83fecd7ce4152f3739dd19f8db9948149261fe",
+    "fit_failures.jsonl": "44c57e621ef3aa7389659d35fda4820717bcb30e856f20aa20b813bb17b735fa",
+    "logs/preflight/BTC_USD_start_1.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/BTC_USD_start_2.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/BTC_USD_start_3.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/BTC_USD_start_4.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/BTC_USD_start_5.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/ETH_USD_start_1.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/ETH_USD_start_2.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/ETH_USD_start_3.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/ETH_USD_start_4.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "logs/preflight/ETH_USD_start_5.log": "3459657e3e148534cf653c925fdbe5ac958cce52190491e3fdd8d5dd6846bf29",
+    "preflight.json": "2c5e93b6e8fa52d05d1c7cb4996427def9cf8584cda2340527fe4bf57bf2839f"
+  },
+  "completed_at_utc": "2026-08-14T15:44:14Z",
+  "fallback_reason": "preflight_failed_for_at_least_one_instrument",
+  "fallback_triggered": true,
+  "fit_failure_count": 3,
+  "git_commit": "8d9198ffd3cc8b283387ffa1c4e870164d128a50",
+  "model_variant": "fallback_not_ms_garch",
+  "preflight_failure_count": 10,
+  "preflight_passed_for_both_instruments": false,
+  "protocol_id": "thesis-v1",
+  "protocol_sha256": "dc87afcda6276a659ba9db0f4e23b77337e567951227c5e17c70ca2ac73a3a7d",
+  "rolling_success_rate": {},
+  "runtime_versions": {
+    "Rscript": "unavailable",
+    "arch": "8.0.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "seed": 20260722,
+  "snapshot_file_sha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d",
+  "snapshot_id": "yahoo-btc-eth-daily-close-2021-07-20_2026-07-19",
+  "stage": "regime",
+  "started_at_utc": "2026-08-14T15:36:41Z",
+  "status": "complete_with_fit_failures",
+  "summary": {
+    "BTC-USD": {
+      "engine": "python-statsmodels-markov-regression",
+      "fit_failure_count": 0,
+      "fit_success_count": 1325,
+      "fit_success_rate": 1.0,
+      "forecast_count": 1325,
+      "instrument": "BTC-USD",
+      "model_label": "fallback_not_ms_garch",
+      "risk": {
+        "0.95": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.016603806941987695,
+            "reason": null,
+            "reject_at_5pct": true,
+            "statistic": 8.196246552115895,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.12389118880708135,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.36742588472066,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.95,
+          "fit_success_rate": 1.0,
+          "kupiec": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.015765689090371602,
+            "reason": null,
+            "reject_at_5pct": true,
+            "statistic": 5.8288206673952345,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 1.7106910866679503,
+          "mean_var_quantile_loss": 0.278915020127851,
+          "n_exceedances": 48,
+          "n_valid_forecasts": 1325
+        },
+        "0.99": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.28008099556777527,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.545352895516885,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.7551367153714065,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.0972650367598078,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.99,
+          "fit_success_rate": 1.0,
+          "kupiec": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.11766812931924234,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.448087858757077,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 2.1457412494264654,
+          "mean_var_quantile_loss": 0.08613118758904614,
+          "n_exceedances": 8,
+          "n_valid_forecasts": 1325
+        }
+      }
+    },
+    "ETH-USD": {
+      "engine": "python-statsmodels-markov-regression",
+      "fit_failure_count": 3,
+      "fit_success_count": 1322,
+      "fit_success_rate": 0.9977358490566037,
+      "forecast_count": 1325,
+      "instrument": "ETH-USD",
+      "model_label": "fallback_not_ms_garch",
+      "risk": {
+        "0.95": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 62,
+            "n_observations": 1322,
+            "p_value": 0.4361914820383379,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 1.6593479061139078,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 62,
+            "n_observations": 1322,
+            "p_value": 0.239041357290828,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 1.3862384888345218,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.95,
+          "fit_success_rate": 0.9977358490566037,
+          "kupiec": {
+            "exceedances": 62,
+            "n_observations": 1322,
+            "p_value": 0.6012535347096117,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.273109417279386,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 2.0318275820986846,
+          "mean_var_quantile_loss": 0.3822129099249226,
+          "n_exceedances": 62,
+          "n_valid_forecasts": 1322
+        },
+        "0.99": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 11,
+            "n_observations": 1322,
+            "p_value": 0.7467251661791848,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.5841161566175259,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 11,
+            "n_observations": 1322,
+            "p_value": 0.6673352465411669,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.1847349953675348,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.99,
+          "fit_success_rate": 0.9977358490566037,
+          "kupiec": {
+            "exceedances": 11,
+            "n_observations": 1322,
+            "p_value": 0.5274090240885905,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.3993811612499911,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 2.4620078463904513,
+          "mean_var_quantile_loss": 0.11812872156010404,
+          "n_exceedances": 11,
+          "n_valid_forecasts": 1322
+        }
+      }
+    }
+  }
+}

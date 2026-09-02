@@ -14,8 +14,8 @@ from typing import Any, Iterable
 
 # This module is nested below the package root (`artifacts/`).
 REPO_ROOT = Path(__file__).resolve().parents[4]
-DEFAULT_OUTPUT_ROOT = REPO_ROOT / "artifacts" / "provisional"
-PROTOCOL_PATH = Path("protocol/thesis-v1.json")
+DEFAULT_OUTPUT_ROOT = REPO_ROOT / "artifacts" / "thesis-v1" / "provisional"
+PROTOCOL_PATH = Path("experiments/thesis-v1/protocol.json")
 GENERATOR_PATH = Path("worker/src/regime_sentinel_worker/artifacts/provisional_report.py")
 SNAPSHOT_ID = "yahoo-btc-eth-daily-close-2021-07-20_2026-07-19"
 INSTRUMENTS = ("BTC-USD", "ETH-USD")
@@ -23,7 +23,7 @@ CONFIDENCES = (0.95, 0.99)
 MODEL_SPECS = (
     ("garch11_student_t", "GARCH(1,1) Student-t", "baseline/student_t"),
     ("garch11_normal", "GARCH(1,1) normal", "baseline/normal"),
-    ("fallback_not_ms_garch", "fallback_not_ms_garch", "fallback/fallback_not_ms_garch"),
+    ("fallback_not_ms_garch", "fallback_not_ms_garch", "regime/fallback_not_ms_garch"),
 )
 MODEL_LABELS = {key: label for key, label, _ in MODEL_SPECS}
 PROVISIONAL_NOTICE = (
@@ -65,23 +65,23 @@ def _verify_source_manifest(stage_root: Path) -> dict[str, Any]:
 
 
 def _source_context(repo_root: Path) -> tuple[dict[str, Any], dict[str, Any], dict[str, str]]:
-    artifact_root = repo_root / "artifacts"
+    artifact_root = repo_root / "artifacts" / "thesis-v1"
     baseline_manifest = _verify_source_manifest(artifact_root / "baseline")
-    regime_manifest = _verify_source_manifest(artifact_root / "fallback")
+    regime_manifest = _verify_source_manifest(artifact_root / "regime")
     protocol_path = repo_root / PROTOCOL_PATH
-    input_manifest_path = repo_root / "protocol" / "input-manifest.json"
+    input_manifest_path = repo_root / "experiments" / "thesis-v1" / "input-manifest.json"
     source_hashes: dict[str, str] = {
         PROTOCOL_PATH.as_posix(): sha256_file(protocol_path),
         input_manifest_path.relative_to(repo_root).as_posix(): sha256_file(input_manifest_path),
         GENERATOR_PATH.as_posix(): sha256_file(repo_root / GENERATOR_PATH),
     }
-    for stage, manifest in (("baseline", baseline_manifest), ("fallback", regime_manifest)):
+    for stage, manifest in (("baseline", baseline_manifest), ("regime", regime_manifest)):
         stage_root = artifact_root / stage
-        source_hashes[f"artifacts/{stage}/manifest.json"] = sha256_file(
+        source_hashes[f"artifacts/thesis-v1/{stage}/manifest.json"] = sha256_file(
             stage_root / "manifest.json"
         )
         for relative in manifest["artifact_sha256"]:
-            source_hashes[f"artifacts/{stage}/{relative}"] = sha256_file(
+            source_hashes[f"artifacts/thesis-v1/{stage}/{relative}"] = sha256_file(
                 stage_root / relative
             )
     return baseline_manifest, regime_manifest, source_hashes
@@ -99,7 +99,7 @@ def _metric_record(
     confidence: float,
 ) -> dict[str, Any]:
     _, _, relative_root = next(spec for spec in MODEL_SPECS if spec[0] == model_key)
-    root = repo_root / "artifacts" / relative_root
+    root = repo_root / "artifacts" / "thesis-v1" / relative_root
     summary = _read_json(root / instrument / "summary.json")
     forecasts = _read_json(root / instrument / "forecasts.json")
     if not isinstance(summary, dict) or not isinstance(forecasts, list):

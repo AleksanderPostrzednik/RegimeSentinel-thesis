@@ -17,8 +17,8 @@ from regime_sentinel_worker.pipeline.ingest import (
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SNAPSHOT_PATH = REPO_ROOT / "data/snapshots/btc-eth-daily-close-2021-07-20_2026-07-19.json"
-PROTOCOL_PATH = REPO_ROOT / "protocol/thesis-v1.json"
-MANIFEST_PATH = REPO_ROOT / "protocol/input-manifest.json"
+PROTOCOL_PATH = REPO_ROOT / "experiments/thesis-v1/protocol.json"
+MANIFEST_PATH = REPO_ROOT / "experiments/thesis-v1/input-manifest.json"
 
 
 class IngestTests(unittest.TestCase):

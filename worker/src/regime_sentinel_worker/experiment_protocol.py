@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-DEFAULT_PROTOCOL = REPO_ROOT / "protocol" / "thesis-v1.json"
+DEFAULT_PROTOCOL = REPO_ROOT / "experiments" / "thesis-v1" / "protocol.json"
 
 
 class ProtocolValidationError(ValueError):
@@ -295,12 +295,8 @@ def validate_protocol(protocol: dict[str, Any], repo_root: Path = REPO_ROOT) -> 
     _expect(protocol["protocolId"] == "thesis-v1", "protocolId must equal thesis-v1", errors)
     _parse_utc_timestamp(protocol["frozenAtUtc"], "frozenAtUtc", errors)
 
+    schema_path = (repo_root / protocol["$schema"].replace("../../", "")).resolve()
     expected_schema_path = (repo_root / "contracts" / "experiment-protocol.v1.schema.json").resolve()
-    schema_reference = protocol["$schema"]
-    if schema_reference == "../contracts/experiment-protocol.v1.schema.json":
-        schema_path = expected_schema_path
-    else:
-        schema_path = (repo_root / schema_reference.replace("../../", "")).resolve()
     _expect(schema_path == expected_schema_path, "protocol must reference the v1 schema", errors)
     if schema_path.exists():
         try:

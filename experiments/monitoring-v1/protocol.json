@@ -1,0 +1,72 @@
+{
+  "$schema": "../../contracts/monitoring-protocol.v1.schema.json",
+  "protocolId": "monitoring-v1",
+  "mode": "operational",
+  "description": "Daily operational risk monitoring, independent from the frozen thesis-v1 experiment.",
+  "schedule": {
+    "frequency": "daily",
+    "timezone": "UTC",
+    "cron": "35 1 * * *",
+    "completeDayLag": 1
+  },
+  "data": {
+    "provider": "Yahoo Finance",
+    "accessMethod": "yfinance 0.2.65",
+    "instruments": ["BTC-USD", "ETH-USD"],
+    "frequency": "1d",
+    "timezone": "UTC",
+    "priceField": "unadjusted_close",
+    "historyCalendarDays": 550,
+    "minimumPriceRows": 501,
+    "validation": {
+      "sharedDatesRequired": true,
+      "contiguousDailyDatesRequired": true,
+      "duplicatesAllowed": false,
+      "missingValuesAllowed": false,
+      "nonPositivePricesAllowed": false
+    },
+    "freshness": {
+      "maximumAgeHoursAfterObservationClose": 48
+    }
+  },
+  "estimation": {
+    "returnScale": 100,
+    "windowReturns": 500,
+    "baseline": {
+      "order": [1, 1],
+      "variants": [
+        { "modelId": "garch11-studentt", "innovation": "student_t" },
+        { "modelId": "garch11-normal", "innovation": "normal" }
+      ],
+      "primaryModelId": "garch11-studentt"
+    },
+    "regime": {
+      "modelId": "markov-variance-2state",
+      "states": 2,
+      "probabilityType": "filtered",
+      "modelLabel": "fallback_not_ms_garch",
+      "trueMsgarchAttempted": false
+    }
+  },
+  "risk": {
+    "horizonDays": 1,
+    "confidenceLevels": [0.95, 0.99]
+  },
+  "history": {
+    "maximumPoints": 180,
+    "rangesDays": [30, 90, 180],
+    "returnDefinition": "log",
+    "returnUnit": "percent_return",
+    "realizedVolatilityWindowsDays": [7, 30],
+    "realizedVolatilityEstimator": "population_standard_deviation",
+    "annualized": false
+  },
+  "publication": {
+    "resultContract": "monitoring-result.v1",
+    "staticPath": "api/v1/monitoring/latest.json",
+    "historyContract": "monitoring-history.v1",
+    "historyStaticPath": "api/v1/monitoring/history.json",
+    "atomic": true,
+    "preservePreviousOnFailure": true
+  }
+}

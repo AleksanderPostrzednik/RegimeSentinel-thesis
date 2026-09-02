@@ -12,13 +12,13 @@ from typing import Any, Iterable
 
 
 ROOT = Path(__file__).resolve().parents[4]
-PACKAGE = ROOT / "artifacts/posthoc-diagnostics"
-BASELINE = ROOT / "artifacts/baseline"
-REGIME = ROOT / "artifacts/fallback"
-FINAL_RUN = ROOT / "artifacts/msgarch-attempt-2"
+PACKAGE = ROOT / "artifacts/thesis-v1/posthoc-diagnostics"
+BASELINE = ROOT / "artifacts/thesis-v1/baseline"
+REGIME = ROOT / "artifacts/thesis-v1/regime"
+FINAL_RUN = ROOT / "artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z"
 FINAL_PREFLIGHT = FINAL_RUN / "preflight.json"
-PROTOCOL = ROOT / "protocol/thesis-v1.json"
-INPUT_MANIFEST = ROOT / "protocol/input-manifest.json"
+PROTOCOL = ROOT / "experiments/thesis-v1/protocol.json"
+INPUT_MANIFEST = ROOT / "experiments/thesis-v1/input-manifest.json"
 GENERATOR = Path(__file__).resolve()
 INSTRUMENTS = ("BTC-USD", "ETH-USD")
 CONFIDENCES = (0.95, 0.99)
@@ -727,7 +727,7 @@ def markdown_table(rows: list[dict[str, Any]], fields: list[str]) -> str:
 
 def source_hashes() -> dict[str, str]:
     paths: set[Path] = {PROTOCOL, INPUT_MANIFEST, GENERATOR}
-    for root in (ROOT / "protocol", BASELINE, REGIME, FINAL_RUN):
+    for root in (ROOT / "experiments/thesis-v1", BASELINE, REGIME, FINAL_RUN):
         if root.exists():
             paths.update(path for path in root.rglob("*") if path.is_file())
     return {rel(path): sha256(path) for path in sorted(paths) if path.is_file()}

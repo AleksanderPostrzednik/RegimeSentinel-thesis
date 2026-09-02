@@ -10,7 +10,7 @@ from regime_sentinel_worker.pipeline.baseline import run_baseline
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PROTOCOL_PATH = REPO_ROOT / "protocol" / "thesis-v1.json"
+PROTOCOL_PATH = REPO_ROOT / "experiments" / "thesis-v1" / "protocol.json"
 
 
 class BaselineIntegrationTests(unittest.TestCase):

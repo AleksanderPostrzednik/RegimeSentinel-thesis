@@ -1,0 +1,55 @@
+{
+  "attempt": {
+    "base_commit": "53caba53e1612fd797dd2addffe3c84f51158c47",
+    "code_commit": "0d99fe083425c60a4138fde944528e98291b7400",
+    "completed_at_utc": "2026-08-18T17:49:54Z",
+    "id": "true-msgarch-attempt-2-20260818T174828Z",
+    "scope": "second_and_final_targeted_msgarch_preflight_only",
+    "started_at_utc": "2026-08-18T17:48:50Z"
+  },
+  "commands": {
+    "bootstrap_used": null,
+    "preflight_used": "cd worker && PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=src python3 -m regime_sentinel_worker.main msgarch-preflight --rscript /tmp/regimesentinel-msgarch-20260818-attempt1/env/bin/Rscript --artifacts /home/alek/projects/regimeSentinel-true-msgarch-attempt-2/artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z --baseline-artifacts /home/alek/projects/regimeSentinel-true-msgarch-attempt-2/artifacts/thesis-v1/baseline",
+    "runtime_reused_from_attempt_1": "/tmp/regimesentinel-msgarch-20260818-attempt1/env/bin/Rscript"
+  },
+  "inputs": {
+    "BTC-USD": {
+      "centered_mean_percent": 2.7505775435088253e-17,
+      "centered_values_sha256": "e57dca967a82dc0cf4c9f37521e3059ddeefd57f5d44f73f1e3f242e67d383fa",
+      "first_return_date": "2021-07-21",
+      "last_return_date": "2022-12-02",
+      "observation_count": 500,
+      "training_mean_percent": -0.11126796680007087
+    },
+    "ETH-USD": {
+      "centered_mean_percent": 5.440092820663267e-18,
+      "centered_values_sha256": "026f98ed9f6701f9cf984e5cf78bd7926fed920d602fb2626fcb7107e63d435a",
+      "first_return_date": "2021-07-21",
+      "last_return_date": "2022-12-02",
+      "observation_count": 500,
+      "training_mean_percent": -0.0645702824413963
+    },
+    "protocol_sha256": "dc87afcda6276a659ba9db0f4e23b77337e567951227c5e17c70ca2ac73a3a7d",
+    "snapshot_file_sha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d"
+  },
+  "outcome": {
+    "fallback_executed_in_this_attempt": false,
+    "fit_return_count": 10,
+    "normal_robustness_status": "not_run_preflight_gate_failed",
+    "oos_observations_used": 0,
+    "preflight_contract_failure_count": 0,
+    "preflight_gate_passed": false,
+    "rolling_status": "not_run_preflight_gate_failed",
+    "valid_fit_count": 10,
+    "variant_b_status": "decision_package_ready"
+  },
+  "runtime": {
+    "MSGARCH": "2.51",
+    "R": "4.4.3",
+    "R_platform": "x86_64-conda-linux-gnu",
+    "Rscript": "Rscript (R) version 4.4.3 (2025-02-28)",
+    "python": "3.10.12",
+    "reused_without_bootstrap": true
+  },
+  "schema_version": 1
+}

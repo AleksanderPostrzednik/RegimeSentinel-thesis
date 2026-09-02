@@ -9,7 +9,7 @@ from regime_sentinel_worker.pipeline.preprocess import MODEL_SCALE_FACTOR, build
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PROTOCOL_PATH = REPO_ROOT / "protocol/thesis-v1.json"
+PROTOCOL_PATH = REPO_ROOT / "experiments/thesis-v1/protocol.json"
 
 
 class PreprocessTests(unittest.TestCase):

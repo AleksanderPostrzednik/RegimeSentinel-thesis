@@ -25,7 +25,7 @@
   "properties": {
     "$schema": {
       "type": "string",
-      "const": "../contracts/experiment-protocol.v1.schema.json"
+      "const": "../../contracts/experiment-protocol.v1.schema.json"
     },
     "schemaVersion": {
       "type": "integer",

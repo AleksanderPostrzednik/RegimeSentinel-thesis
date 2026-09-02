@@ -1,0 +1,86 @@
+{
+  "attempt": {
+    "code_commit": "9a252d5ddf8bcc7cb5ad82e62a301c0d74d38dd2",
+    "completed_at_utc": "2026-08-18T15:35:48Z",
+    "id": "true-msgarch-attempt-1-20260818T153348Z",
+    "scope": "controlled_msgarch_preflight_only",
+    "started_at_utc": "2026-08-18T15:34:19Z"
+  },
+  "bootstrap": {
+    "default_runtime_location": ".runtime/msgarch-r4.4.3-msgarch2.51",
+    "ephemeral_runtime_used": "/tmp/regimesentinel-msgarch-20260818-attempt1",
+    "lock_files": {
+      "worker/r/bootstrap_msgarch_env.sh": "795c2836f32f7ce6185597063c188c526252c19dc2137d5733151ce524a9b695",
+      "worker/r/conda-linux-64.explicit.lock": "849f1c7c1efeb7c54b1be9e25f5e1fcce7d7266a5847f18214682e4ab38e3512",
+      "worker/r/runtime-sources.lock.json": "d3b799e6aadc7a33417bb66ff56fa9cd67238a439c9e1d5d7b8524efaea4d080"
+    },
+    "micromamba": {
+      "binary_sha256": "366cd9cd8be14df1ab8ed50352a82111082a36686b2d389fdb79a92c3fafb3e3",
+      "version": "2.9.0"
+    },
+    "source_packages": {
+      "MSGARCH": {
+        "sha256": "b053e8a125a9fd0784aa496ea35021d2cfb3491210fb11554d3ca27b02481bd9",
+        "version": "2.51"
+      },
+      "fanplot": {
+        "sha256": "04e78587b29e4817b382b0abbbcad1b7e7a30aa789cb308ff5e8e74d58c4b2dd",
+        "version": "4.0.1"
+      }
+    }
+  },
+  "commands": {
+    "bootstrap_used": "REGIMESENTINEL_MSGARCH_RUNTIME=/tmp/regimesentinel-msgarch-20260818-attempt1 worker/r/bootstrap_msgarch_env.sh",
+    "preflight_used": "cd worker && PYTHONPATH=src python3 -m regime_sentinel_worker.main msgarch-preflight --rscript /tmp/regimesentinel-msgarch-20260818-attempt1/env/bin/Rscript --artifacts ../artifacts/thesis-v1/runs/true-msgarch-attempt-1-20260818T153348Z --baseline-artifacts ../artifacts/thesis-v1/baseline",
+    "portable_bootstrap": "worker/r/bootstrap_msgarch_env.sh",
+    "portable_preflight_template": "cd worker && PYTHONPATH=src python3 -m regime_sentinel_worker.main msgarch-preflight --rscript ../.runtime/msgarch-r4.4.3-msgarch2.51/env/bin/Rscript --artifacts ../artifacts/thesis-v1/runs/<new-run-id> --baseline-artifacts ../artifacts/thesis-v1/baseline"
+  },
+  "host": {
+    "architecture": "x86_64",
+    "glibc": "2.35",
+    "kernel": "Linux 6.18.33.2-microsoft-standard-WSL2",
+    "os": "Ubuntu 22.04.5 LTS"
+  },
+  "initial_probe_before_bootstrap": {
+    "R": "unavailable",
+    "Rscript": "unavailable",
+    "docker_desktop_wsl_integration": "unavailable"
+  },
+  "inputs": {
+    "BTC-USD": {
+      "centered_mean_percent": 2.7505775435088253e-17,
+      "centered_values_sha256": "e57dca967a82dc0cf4c9f37521e3059ddeefd57f5d44f73f1e3f242e67d383fa",
+      "first_return_date": "2021-07-21",
+      "last_return_date": "2022-12-02",
+      "observation_count": 500,
+      "training_mean_percent": -0.11126796680007087
+    },
+    "ETH-USD": {
+      "centered_mean_percent": 5.440092820663267e-18,
+      "centered_values_sha256": "026f98ed9f6701f9cf984e5cf78bd7926fed920d602fb2626fcb7107e63d435a",
+      "first_return_date": "2021-07-21",
+      "last_return_date": "2022-12-02",
+      "observation_count": 500,
+      "training_mean_percent": -0.0645702824413963
+    },
+    "protocol_sha256": "dc87afcda6276a659ba9db0f4e23b77337e567951227c5e17c70ca2ac73a3a7d",
+    "snapshot_file_sha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d"
+  },
+  "outcome": {
+    "fallback_triggered": false,
+    "fit_return_count": 10,
+    "n_valid_forecasts": 0,
+    "preflight_contract_failure_count": 1,
+    "preflight_gate_passed": false,
+    "rolling_started": false,
+    "valid_fit_count": 9
+  },
+  "runtime": {
+    "MSGARCH": "2.51",
+    "R": "4.4.3",
+    "R_platform": "x86_64-conda-linux-gnu",
+    "Rscript": "Rscript (R) version 4.4.3 (2025-02-28)",
+    "python": "3.10.12"
+  },
+  "schema_version": 1
+}

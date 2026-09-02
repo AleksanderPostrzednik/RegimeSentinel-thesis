@@ -13,7 +13,7 @@ from regime_sentinel_worker.experiment_protocol import (
 
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-PROTOCOL_PATH = REPO_ROOT / "protocol" / "thesis-v1.json"
+PROTOCOL_PATH = REPO_ROOT / "experiments" / "thesis-v1" / "protocol.json"
 
 
 class ExperimentProtocolTests(unittest.TestCase):

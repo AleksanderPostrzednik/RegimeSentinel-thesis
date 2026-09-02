@@ -1,0 +1,73 @@
+{
+  "artifact_sha256": {
+    "README.md": "775ce54b57028dc69dff332fe3bf262e0ce8dd7bcbcfdad396ad0c9f93ac69b2",
+    "baseline_gate.json": "c6e044d3f7022e9dafced274da9c75a33842828d4576c15c4a164f61bc55ae40",
+    "environment.json": "fa5c714db73445be1b42ffa8107fade3465a6f37cf1d8cc3b1d01dfec9a89c0d",
+    "logs/preflight/BTC_USD_start_1.log": "d37d180718eae00744f79be0c8d58d9da97a2fde64be6e39e3e158590f5dad41",
+    "logs/preflight/BTC_USD_start_2.log": "5cd0914d12e9a6818addf848b757793ffda139a35bde7e91f14304a474d21a69",
+    "logs/preflight/BTC_USD_start_3.log": "9ff965a4f2aa06dc152dfad8c6d2fa6a91c503e3f7f73c7b403a86a46caefe5a",
+    "logs/preflight/BTC_USD_start_4.log": "d78b16c254d38ab4c3110f46058f2f3176660a59486c705ebdc41de81be5416d",
+    "logs/preflight/BTC_USD_start_5.log": "d37142e621bf77ce43fbce9f218522614dff2392f486b4de12640ad3933941da",
+    "logs/preflight/ETH_USD_start_1.log": "ba186d9061ebcec107f294f0079482d766eb8623cf3ddfdaca41d3a23d397e52",
+    "logs/preflight/ETH_USD_start_2.log": "f0d5798623e304aa730c9451c3f8dab221e216cafe66238e34b706f14824ca7f",
+    "logs/preflight/ETH_USD_start_3.log": "c9b564a362b119a3607629734880597abb75815674c77a5131ed24a9bb609691",
+    "logs/preflight/ETH_USD_start_4.log": "224f05c427d36501b99a7b7958c6a972c8bb66f0f3c5e708475272ade78de058",
+    "logs/preflight/ETH_USD_start_5.log": "5c3dc640d3a1de9cd881b4ebcc21dfc8b60dd551f0da1b1fb591c248f0ec827a",
+    "numerical_diagnostics.json": "f337858111e5a8b4c6c2522777f63ba8785afb378c540b550657d4a59837728f",
+    "preflight.json": "31a0da72c0e1f3e434b2e62220c20b1b76ac9dcef6fc8c8f4728c29e5ced5426"
+  },
+  "attempt_count": 10,
+  "completed_at_utc": "2026-08-18T17:49:54Z",
+  "decision": {
+    "recommendation": "proceed_with_protocol_variant_b_fallback_not_ms_garch",
+    "third_msgarch_attempt": "not_authorized",
+    "variant_b_execution": "not_run_in_this_attempt"
+  },
+  "diagnostics": {
+    "all_hessians_available": true,
+    "all_optimizer_convergence_codes_zero": true,
+    "coordinate_system": "reduced_transformed_optimizer_space",
+    "path": "numerical_diagnostics.json"
+  },
+  "engine": "R-MSGARCH-FitML",
+  "execution_scope": "second_and_final_targeted_msgarch_preflight_only",
+  "fallback_triggered": false,
+  "fit_return_count": 10,
+  "forecast_state_probability": "filtered",
+  "git_commit": "0d99fe083425c60a4138fde944528e98291b7400",
+  "input_window_sha256": {
+    "BTC-USD": "e57dca967a82dc0cf4c9f37521e3059ddeefd57f5d44f73f1e3f242e67d383fa",
+    "ETH-USD": "026f98ed9f6701f9cf984e5cf78bd7926fed920d602fb2626fcb7107e63d435a"
+  },
+  "model_variant": "MS-GARCH",
+  "n_valid_forecasts": 0,
+  "normal_robustness_status": "not_run_preflight_gate_failed",
+  "oos_observations_used": 0,
+  "preflight_failure_count": 0,
+  "preflight_gate_failure_count": 2,
+  "preflight_passed_for_both_instruments": false,
+  "protocol_id": "thesis-v1",
+  "protocol_sha256": "dc87afcda6276a659ba9db0f4e23b77337e567951227c5e17c70ca2ac73a3a7d",
+  "runtime_versions": {
+    "MSGARCH": "2.51",
+    "R_platform": "x86_64-conda-linux-gnu",
+    "Rscript": "Rscript (R) version 4.4.3 (2025-02-28)",
+    "arch": "8.0.0",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "scipy": "1.15.3",
+    "statsmodels": "0.14.6"
+  },
+  "seed": 20260722,
+  "snapshot_file_sha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d",
+  "snapshot_id": "yahoo-btc-eth-daily-close-2021-07-20_2026-07-19",
+  "stage": "msgarch_preflight",
+  "rolling_status": "not_run_preflight_gate_failed",
+  "started_at_utc": "2026-08-18T17:48:50Z",
+  "states": 2,
+  "status": "failed",
+  "valid_fit_count": 10,
+  "variant_b_status": "decision_package_ready"
+}

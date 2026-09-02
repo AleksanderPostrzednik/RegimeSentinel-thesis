@@ -11,8 +11,8 @@ from regime_sentinel_worker.regime import run_msgarch_preflight_stage, run_regim
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
-PROTOCOL_PATH = REPO_ROOT / "protocol" / "thesis-v1.json"
-ARTIFACT_ROOT = REPO_ROOT / "artifacts"
+PROTOCOL_PATH = REPO_ROOT / "experiments" / "thesis-v1" / "protocol.json"
+ARTIFACT_ROOT = REPO_ROOT / "experiments" / "thesis-v1" / "artifacts"
 
 
 def main() -> None:

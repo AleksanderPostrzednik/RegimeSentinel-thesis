@@ -1,0 +1,223 @@
+openapi: 3.1.0
+info:
+  title: Regime Sentinel API
+  version: v1
+  description: Read-only API over versioned thesis-v1 and operational monitoring-v1 artifacts.
+servers:
+  - url: http://127.0.0.1:3000/api/v1
+paths:
+  /health:
+    get:
+      operationId: getHealth
+      responses:
+        "200":
+          description: Artifact-backed API is ready
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [status, protocolId, modelLabel]
+                properties:
+                  status: { const: ok }
+                  protocolId: { const: thesis-v1 }
+                  modelLabel: { $ref: "#/components/schemas/ModelLabel" }
+  /runs/latest:
+    get:
+      operationId: getLatestRun
+      responses:
+        "200":
+          description: Latest versioned run
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/RunSummary" }
+        "503": { description: Required artifact is unavailable or invalid }
+  /runs:
+    get:
+      operationId: listRuns
+      parameters:
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 0, default: 20 }
+      responses:
+        "200":
+          description: Known runs; the current adapter exposes one canonical run
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/RunSummary" }
+  /runs/{runId}/results/{instrument}:
+    get:
+      operationId: getInstrumentResult
+      parameters:
+        - $ref: "#/components/parameters/RunId"
+        - $ref: "#/components/parameters/Instrument"
+      responses:
+        "200":
+          description: Prices, rolling forecasts, regimes, risk, and backtests
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/InstrumentResult" }
+        "404": { description: Unknown run or instrument }
+        "503": { description: Required artifact is unavailable or invalid }
+  /runs/{runId}/artifacts:
+    get:
+      operationId: listRunArtifacts
+      parameters:
+        - $ref: "#/components/parameters/RunId"
+      responses:
+        "200":
+          description: Files declared by the regime manifest
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/ArtifactDescriptor" }
+        "404": { description: Unknown run }
+  /monitoring/latest:
+    get:
+      operationId: getLatestMonitoring
+      responses:
+        "200":
+          description: Latest complete and fresh operational monitoring result
+          content:
+            application/json:
+              schema: { $ref: "./monitoring-result.v1.schema.json" }
+        "404": { description: No complete monitoring run exists }
+        "503": { description: Monitoring result is unavailable or invalid }
+  /monitoring/history:
+    get:
+      operationId: getMonitoringHistory
+      responses:
+        "200":
+          description: Daily prices, returns, and realized volatility from the latest monitoring run
+          content:
+            application/json:
+              schema: { $ref: "./monitoring-history.v1.schema.json" }
+        "404": { description: History for the latest monitoring run does not exist }
+        "503": { description: Monitoring history is invalid or does not match the latest run }
+components:
+  parameters:
+    RunId:
+      in: path
+      name: runId
+      required: true
+      schema: { type: string }
+    Instrument:
+      in: path
+      name: instrument
+      required: true
+      schema: { $ref: "#/components/schemas/Instrument" }
+  schemas:
+    Instrument:
+      type: string
+      enum: [BTC-USD, ETH-USD]
+    ModelLabel:
+      type: string
+      enum: [MS-GARCH, fallback_not_ms_garch]
+    DataStatus:
+      type: object
+      required: [provider, field, timezone, observedStart, observedEnd, priceRows, returnRows, missingSharedCloseCount, contentSha256, status]
+      properties:
+        provider: { const: Yahoo Finance }
+        field: { const: unadjusted close }
+        timezone: { const: UTC }
+        observedStart: { type: string, format: date }
+        observedEnd: { type: string, format: date }
+        priceRows: { type: integer }
+        returnRows: { type: integer }
+        missingSharedCloseCount: { type: integer }
+        contentSha256: { type: string }
+        status: { const: verified }
+    RunSummary:
+      type: object
+      required: [runId, status, protocolId, protocolSha256, snapshotId, snapshotFileSha256, modelLabel, startedAtUtc, completedAtUtc, fitFailuresCount, preflightFailuresCount, artifactsCount, dataStatus, warnings]
+      properties:
+        runId: { type: string }
+        status: { type: string }
+        protocolId: { const: thesis-v1 }
+        protocolSha256: { type: string }
+        snapshotId: { type: string }
+        snapshotFileSha256: { type: string }
+        modelLabel: { $ref: "#/components/schemas/ModelLabel" }
+        startedAtUtc: { type: string, format: date-time }
+        completedAtUtc: { type: string, format: date-time }
+        fitFailuresCount: { type: integer }
+        preflightFailuresCount: { type: integer }
+        artifactsCount: { type: integer }
+        dataStatus: { $ref: "#/components/schemas/DataStatus" }
+        warnings: { type: array, items: { type: string } }
+    ForecastPoint:
+      type: object
+      required: [dateUtc, fitSuccess, actualReturnPercent, actualLossPercent, volatilityPercent, regime, risk]
+      properties:
+        dateUtc: { type: string, format: date }
+        fitSuccess: { type: boolean }
+        actualReturnPercent: { type: number }
+        actualLossPercent: { type: number }
+        volatilityPercent: { type: [number, "null"] }
+        regime:
+          type: [object, "null"]
+          properties:
+            lowProbability: { type: number }
+            highProbability: { type: number }
+            mostLikelyState: { type: string, enum: [low, high] }
+        risk:
+          type: [object, "null"]
+          description: VaR/ES use the positive loss convention.
+          properties:
+            var95Percent: { type: number }
+            es95Percent: { type: number }
+            exceeded95: { type: boolean }
+            var99Percent: { type: number }
+            es99Percent: { type: number }
+            exceeded99: { type: boolean }
+    BacktestSummary:
+      type: object
+      properties:
+        confidenceLevel: { type: number, enum: [0.95, 0.99] }
+        validForecasts: { type: integer }
+        expectedExceedances: { type: number }
+        observedExceedances: { type: integer }
+        fitSuccessRate: { type: number }
+        quantileLoss: { type: [number, "null"] }
+        fz0Score: { type: [number, "null"] }
+        kupiecPValue: { type: [number, "null"] }
+        independencePValue: { type: [number, "null"] }
+        conditionalCoveragePValue: { type: [number, "null"] }
+        rejectedAt05: { type: [boolean, "null"] }
+    InstrumentResult:
+      type: object
+      required: [runId, protocolId, instrument, model, dataStatus, priceSeries, series, backtests]
+      properties:
+        runId: { type: string }
+        protocolId: { const: thesis-v1 }
+        instrument: { $ref: "#/components/schemas/Instrument" }
+        model:
+          type: object
+          properties:
+            label: { $ref: "#/components/schemas/ModelLabel" }
+            engine: { type: string }
+            forecastStateInformation: { const: filtered }
+            fallbackReason: { type: [string, "null"] }
+        dataStatus: { $ref: "#/components/schemas/DataStatus" }
+        priceSeries:
+          type: array
+          items:
+            type: object
+            properties:
+              dateUtc: { type: string, format: date }
+              closeUsd: { type: number }
+        series:
+          type: array
+          items: { $ref: "#/components/schemas/ForecastPoint" }
+        backtests:
+          type: array
+          items: { $ref: "#/components/schemas/BacktestSummary" }
+    ArtifactDescriptor:
+      type: object
+      properties:
+        artifactId: { type: string }
+        path: { type: string }
+        sha256: { type: string }
+        sizeBytes: { type: integer, minimum: 0 }

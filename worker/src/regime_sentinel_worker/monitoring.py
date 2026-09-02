@@ -31,11 +31,11 @@ from regime_sentinel_worker.pipeline.risk.var_es import VaREsForecast, parametri
 
 UTC = timezone.utc
 REPO_ROOT = Path(__file__).resolve().parents[3]
-DEFAULT_PROTOCOL_PATH = REPO_ROOT / "protocol" / "monitoring-v1.json"
+DEFAULT_PROTOCOL_PATH = REPO_ROOT / "experiments" / "monitoring-v1" / "protocol.json"
 PROTOCOL_SCHEMA_PATH = REPO_ROOT / "contracts" / "monitoring-protocol.v1.schema.json"
 RESULT_SCHEMA_PATH = REPO_ROOT / "contracts" / "monitoring-result.v1.schema.json"
 HISTORY_SCHEMA_PATH = REPO_ROOT / "contracts" / "monitoring-history.v1.schema.json"
-DEFAULT_ARTIFACT_ROOT = REPO_ROOT / "artifacts" / "monitoring-v1"
+DEFAULT_ARTIFACT_ROOT = REPO_ROOT / ".runtime" / "monitoring-v1"
 SOURCE_URLS = [
     "https://finance.yahoo.com/quote/BTC-USD/history/",
     "https://finance.yahoo.com/quote/ETH-USD/history/",

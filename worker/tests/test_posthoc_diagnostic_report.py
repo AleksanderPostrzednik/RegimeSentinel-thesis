@@ -67,11 +67,11 @@ class PosthocDiagnosticReportTests(unittest.TestCase):
         self.assertGreaterEqual(second["source_count"], 1)
 
         expected_charts = {
-            "artifacts/posthoc-diagnostics/charts/log_returns.svg",
-            "artifacts/posthoc-diagnostics/charts/var_es_exceedances_95.svg",
-            "artifacts/posthoc-diagnostics/charts/var_es_exceedances_99.svg",
-            "artifacts/posthoc-diagnostics/charts/msgarch_preflight_loglikelihood.svg",
-            "artifacts/posthoc-diagnostics/charts/msgarch_preflight_occupancy.svg",
+            "artifacts/thesis-v1/posthoc-diagnostics/charts/log_returns.svg",
+            "artifacts/thesis-v1/posthoc-diagnostics/charts/var_es_exceedances_95.svg",
+            "artifacts/thesis-v1/posthoc-diagnostics/charts/var_es_exceedances_99.svg",
+            "artifacts/thesis-v1/posthoc-diagnostics/charts/msgarch_preflight_loglikelihood.svg",
+            "artifacts/thesis-v1/posthoc-diagnostics/charts/msgarch_preflight_occupancy.svg",
         }
         self.assertTrue(expected_charts.issubset(set(second["artifact_sha256"])))
 
@@ -109,7 +109,7 @@ class PosthocDiagnosticReportTests(unittest.TestCase):
             self.assertEqual(float(generated["occupancy_state_2"]), expected[4][1])
             self.assertTrue(generated["success"] == "true")
             self.assertTrue(generated["log_path"].startswith(
-                "artifacts/msgarch-attempt-2/"
+                "artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/"
             ))
 
         generated_baseline = read_csv(PACKAGE / "tables/baseline_diagnostics.csv")

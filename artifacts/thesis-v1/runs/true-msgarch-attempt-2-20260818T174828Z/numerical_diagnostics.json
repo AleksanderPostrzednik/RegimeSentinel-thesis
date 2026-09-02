@@ -1,0 +1,597 @@
+{
+  "canonicalization": {
+    "all_reported_state_orders": [
+      1,
+      2
+    ],
+    "implementation": "MSGARCH 2.51 FitML sorts fitted states by ascending unconditional volatility and permutes the transition matrix before TransMat and State are evaluated.",
+    "label_switching_explains_gate_failure": false,
+    "regression_test": "test_canonical_parameter_delta_ignores_label_switching",
+    "result": "A synthetic raw state-label swap produces canonical delta 0. The observed nonzero deltas remain after canonicalization."
+  },
+  "clusters": {
+    "BTC-USD": {
+      "best_start_index": 1,
+      "descriptive_basins_not_used_by_gate": [
+        {
+          "members": [
+            1
+          ],
+          "note": "Highest log-likelihood, separated mainly by P_1_1; Hessian has one small negative eigenvalue."
+        },
+        {
+          "members": [
+            0,
+            2,
+            3,
+            4
+          ],
+          "note": "Lower-objective family; starts 2, 3, and 4 are the tighter subgroup."
+        }
+      ],
+      "gate_delta": 0.7106245999964016,
+      "gate_delta_driver": "P_1_1 between starts 1 and 0",
+      "strict_clusters_at_1e-6": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "ETH-USD": {
+      "best_start_index": 2,
+      "descriptive_basins_not_used_by_gate": [
+        {
+          "members": [
+            0,
+            3,
+            4
+          ],
+          "note": "Near-matching lower-likelihood family; maximum pairwise delta 0.00694989872476226."
+        },
+        {
+          "members": [
+            1
+          ],
+          "note": "Distinct positive-definite local optimum."
+        },
+        {
+          "members": [
+            2
+          ],
+          "note": "Highest log-likelihood and positive-definite local optimum."
+        }
+      ],
+      "gate_delta": 8.361508087301651,
+      "gate_delta_driver": "alpha0_2 between starts 2 and 4",
+      "strict_clusters_at_1e-6": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ]
+    },
+    "pairwise_canonical_deltas": {
+      "BTC-USD": [
+        {
+          "delta": 0.7106245999964016,
+          "driver": "P_1_1",
+          "log_likelihood_gap": 2.034138605803264,
+          "starts": [
+            0,
+            1
+          ]
+        },
+        {
+          "delta": 0.06121178894920598,
+          "driver": "P_2_1",
+          "log_likelihood_gap": 0.12409907415053567,
+          "starts": [
+            0,
+            2
+          ]
+        },
+        {
+          "delta": 0.059957334563888964,
+          "driver": "P_2_1",
+          "log_likelihood_gap": 0.13122326662414707,
+          "starts": [
+            0,
+            3
+          ]
+        },
+        {
+          "delta": 0.03423209833014429,
+          "driver": "P_2_1",
+          "log_likelihood_gap": 0.14143196387067292,
+          "starts": [
+            0,
+            4
+          ]
+        },
+        {
+          "delta": 0.7018530453359934,
+          "driver": "P_1_1",
+          "log_likelihood_gap": 1.9100395316527283,
+          "starts": [
+            1,
+            2
+          ]
+        },
+        {
+          "delta": 0.7048147096895921,
+          "driver": "P_1_1",
+          "log_likelihood_gap": 1.9029153391791169,
+          "starts": [
+            1,
+            3
+          ]
+        },
+        {
+          "delta": 0.6992050287222776,
+          "driver": "P_1_1",
+          "log_likelihood_gap": 1.8927066419325911,
+          "starts": [
+            1,
+            4
+          ]
+        },
+        {
+          "delta": 0.008696053838625997,
+          "driver": "alpha0_2",
+          "log_likelihood_gap": 0.0071241924736114015,
+          "starts": [
+            2,
+            3
+          ]
+        },
+        {
+          "delta": 0.02697969061906169,
+          "driver": "P_2_1",
+          "log_likelihood_gap": 0.017332889720137246,
+          "starts": [
+            2,
+            4
+          ]
+        },
+        {
+          "delta": 0.025725236233744675,
+          "driver": "P_2_1",
+          "log_likelihood_gap": 0.010208697246525844,
+          "starts": [
+            3,
+            4
+          ]
+        }
+      ],
+      "ETH-USD": [
+        {
+          "delta": 5.179489221591542,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.09114368968175768,
+          "starts": [
+            0,
+            1
+          ]
+        },
+        {
+          "delta": 8.360688473105716,
+          "driver": "alpha0_2",
+          "log_likelihood_gap": 0.235846229251365,
+          "starts": [
+            0,
+            2
+          ]
+        },
+        {
+          "delta": 0.004085954027398531,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.002530428314457822,
+          "starts": [
+            0,
+            3
+          ]
+        },
+        {
+          "delta": 0.0028639446973637295,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.0010310185491562152,
+          "starts": [
+            0,
+            4
+          ]
+        },
+        {
+          "delta": 4.9823139266354115,
+          "driver": "alpha0_2",
+          "log_likelihood_gap": 0.14470253956960732,
+          "starts": [
+            1,
+            2
+          ]
+        },
+        {
+          "delta": 5.1754032675641435,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.08861326136729986,
+          "starts": [
+            1,
+            3
+          ]
+        },
+        {
+          "delta": 5.182353166288905,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.09011267113260146,
+          "starts": [
+            1,
+            4
+          ]
+        },
+        {
+          "delta": 8.36092865793537,
+          "driver": "alpha0_2",
+          "log_likelihood_gap": 0.23331580093690718,
+          "starts": [
+            2,
+            3
+          ]
+        },
+        {
+          "delta": 8.361508087301651,
+          "driver": "alpha0_2",
+          "log_likelihood_gap": 0.2348152107022088,
+          "starts": [
+            2,
+            4
+          ]
+        },
+        {
+          "delta": 0.00694989872476226,
+          "driver": "alpha0_1",
+          "log_likelihood_gap": 0.001499409765301607,
+          "starts": [
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "protocol_tolerance": 1e-6
+  },
+  "decision": {
+    "fallback_executed_in_this_attempt": false,
+    "normal_robustness_status": "not_run_preflight_gate_failed",
+    "recommendation": "Close further MSGARCH stabilization under thesis-v1 and proceed with protocol variant B using the explicit fallback_not_ms_garch label.",
+    "rolling_status": "not_run_preflight_gate_failed",
+    "third_attempt_status": "not_authorized",
+    "variant_b_package_status": "ready"
+  },
+  "eth_occupancy_diagnosis": {
+    "attempt_1": {
+      "convergence_status": "unknown_not_preserved",
+      "log_likelihood": -1435.139651047929,
+      "minimum_occupancy": 0.0007827370526442916,
+      "start_index": 2,
+      "transition_matrix": [
+        [
+          0.9992196355198135,
+          0.0007803644801864795
+        ],
+        [
+          0.9988003675457219,
+          0.0011996324542781212
+        ]
+      ]
+    },
+    "attempt_2_same_start_index": {
+      "convergence": 0,
+      "hessian_positive_definite": true,
+      "log_likelihood": -1432.1423048079112,
+      "minimum_occupancy": 0.06781293052010788,
+      "transition_matrix": [
+        [
+          0.9434119285008645,
+          0.05658807149913547
+        ],
+        [
+          0.004214999864300098,
+          0.9957850001356999
+        ]
+      ]
+    },
+    "conclusion": "The old occupancy failure was a real degenerate transition solution, not a parser or label error. Correcting the corrupted shared-nu start changes the trajectory and removes the degeneration. Because attempt 1 did not preserve optimizer status or Hessian, it cannot prove whether its BFGS stopped at a strict local optimum."
+  },
+  "gate": {
+    "BTC-USD": {
+      "minimum_occupancy_passed": true,
+      "passed": false,
+      "repeat_parameter_delta": 0.7106245999964016,
+      "repeatable_within_tolerance": false
+    },
+    "ETH-USD": {
+      "minimum_occupancy_passed": true,
+      "passed": false,
+      "repeat_parameter_delta": 8.361508087301651,
+      "repeatable_within_tolerance": false
+    },
+    "joint_passed": false,
+    "rule_changed": false
+  },
+  "hessian_coordinate_system": "Reduced, transformed nine-parameter optimizer space; not natural or canonical parameter space.",
+  "inputs": {
+    "BTC-USD": {
+      "centered_values_sha256": "e57dca967a82dc0cf4c9f37521e3059ddeefd57f5d44f73f1e3f242e67d383fa",
+      "observation_count": 500
+    },
+    "ETH-USD": {
+      "centered_values_sha256": "026f98ed9f6701f9cf984e5cf78bd7926fed920d602fb2626fcb7107e63d435a",
+      "observation_count": 500
+    },
+    "oos_observations_used": 0,
+    "protocol_sha256": "dc87afcda6276a659ba9db0f4e23b77337e567951227c5e17c70ca2ac73a3a7d"
+  },
+  "optimizer_attempts": [
+    {
+      "condition_number_abs_eigen": 806748.7673497073,
+      "convergence": 0,
+      "effective_seed": 20260722,
+      "function_evaluations": 91,
+      "gradient_evaluations": 25,
+      "hessian_max_eigenvalue": 24924.752143233567,
+      "hessian_min_eigenvalue": 0.030895308616479423,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "BTC-USD",
+      "log_likelihood": -1289.1275140006728,
+      "message": "",
+      "minimum_occupancy": 0.23907974698227694,
+      "objective": 1289.1275140006728,
+      "start_index": 0
+    },
+    {
+      "condition_number_abs_eigen": 26210906.185309794,
+      "convergence": 0,
+      "effective_seed": 20260723,
+      "function_evaluations": 140,
+      "gradient_evaluations": 68,
+      "hessian_max_eigenvalue": 85465.40020012132,
+      "hessian_min_eigenvalue": -0.003260680862992116,
+      "hessian_negative_eigenvalue_count": 1,
+      "hessian_positive_definite": false,
+      "hessian_rank": 9,
+      "instrument": "BTC-USD",
+      "log_likelihood": -1287.0933753948696,
+      "message": "",
+      "minimum_occupancy": 0.48159869831975,
+      "objective": 1287.0933753948696,
+      "start_index": 1
+    },
+    {
+      "condition_number_abs_eigen": 2445952.0338937584,
+      "convergence": 0,
+      "effective_seed": 20260724,
+      "function_evaluations": 161,
+      "gradient_evaluations": 69,
+      "hessian_max_eigenvalue": 87313.29551526989,
+      "hessian_min_eigenvalue": 0.03569705959289568,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "BTC-USD",
+      "log_likelihood": -1289.0034149265223,
+      "message": "",
+      "minimum_occupancy": 0.2646270605086819,
+      "objective": 1289.0034149265223,
+      "start_index": 2
+    },
+    {
+      "condition_number_abs_eigen": 3094462.0600863267,
+      "convergence": 0,
+      "effective_seed": 20260725,
+      "function_evaluations": 130,
+      "gradient_evaluations": 53,
+      "hessian_max_eigenvalue": 110316.57489435727,
+      "hessian_min_eigenvalue": 0.03564967763452875,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "BTC-USD",
+      "log_likelihood": -1288.9962907340487,
+      "message": "",
+      "minimum_occupancy": 0.2616063192137569,
+      "objective": 1288.9962907340487,
+      "start_index": 3
+    },
+    {
+      "condition_number_abs_eigen": 4370019.506233034,
+      "convergence": 0,
+      "effective_seed": 20260726,
+      "function_evaluations": 174,
+      "gradient_evaluations": 52,
+      "hessian_max_eigenvalue": 164650.82926008763,
+      "hessian_min_eigenvalue": 0.03767736712049988,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "BTC-USD",
+      "log_likelihood": -1288.9860820368021,
+      "message": "",
+      "minimum_occupancy": 0.25857216675026234,
+      "objective": 1288.9860820368021,
+      "start_index": 4
+    },
+    {
+      "condition_number_abs_eigen": 1147521.602015405,
+      "convergence": 0,
+      "effective_seed": 20260722,
+      "function_evaluations": 85,
+      "gradient_evaluations": 42,
+      "hessian_max_eigenvalue": 109.02656975668813,
+      "hessian_min_eigenvalue": 9.501047262657502e-5,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "ETH-USD",
+      "log_likelihood": -1432.3781510371625,
+      "message": "",
+      "minimum_occupancy": 0.2945617915602452,
+      "objective": 1432.3781510371625,
+      "start_index": 0
+    },
+    {
+      "condition_number_abs_eigen": 1019.2695193907127,
+      "convergence": 0,
+      "effective_seed": 20260723,
+      "function_evaluations": 129,
+      "gradient_evaluations": 65,
+      "hessian_max_eigenvalue": 173.52603746251214,
+      "hessian_min_eigenvalue": 0.17024548871650802,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "ETH-USD",
+      "log_likelihood": -1432.2870073474808,
+      "message": "",
+      "minimum_occupancy": 0.15667971126680788,
+      "objective": 1432.2870073474808,
+      "start_index": 1
+    },
+    {
+      "condition_number_abs_eigen": 16602.6482253496,
+      "convergence": 0,
+      "effective_seed": 20260724,
+      "function_evaluations": 71,
+      "gradient_evaluations": 43,
+      "hessian_max_eigenvalue": 132.14193835429404,
+      "hessian_min_eigenvalue": 0.007959088005763703,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "ETH-USD",
+      "log_likelihood": -1432.1423048079112,
+      "message": "",
+      "minimum_occupancy": 0.06781293052010788,
+      "objective": 1432.1423048079112,
+      "start_index": 2
+    },
+    {
+      "condition_number_abs_eigen": 86453.92885591142,
+      "convergence": 0,
+      "effective_seed": 20260725,
+      "function_evaluations": 95,
+      "gradient_evaluations": 58,
+      "hessian_max_eigenvalue": 101.10350406762205,
+      "hessian_min_eigenvalue": 0.0011694495022444426,
+      "hessian_negative_eigenvalue_count": 0,
+      "hessian_positive_definite": true,
+      "hessian_rank": 9,
+      "instrument": "ETH-USD",
+      "log_likelihood": -1432.375620608848,
+      "message": "",
+      "minimum_occupancy": 0.29466355877858086,
+      "objective": 1432.375620608848,
+      "start_index": 3
+    },
+    {
+      "condition_number_abs_eigen": 30062.531589736427,
+      "convergence": 0,
+      "effective_seed": 20260726,
+      "function_evaluations": 166,
+      "gradient_evaluations": 81,
+      "hessian_max_eigenvalue": 97.16376157883252,
+      "hessian_min_eigenvalue": -0.0032320552009666727,
+      "hessian_negative_eigenvalue_count": 1,
+      "hessian_positive_definite": false,
+      "hessian_rank": 9,
+      "instrument": "ETH-USD",
+      "log_likelihood": -1432.3771200186134,
+      "message": "",
+      "minimum_occupancy": 0.2944842777092194,
+      "objective": 1432.3771200186134,
+      "start_index": 4
+    }
+  ],
+  "optimizer_summary": {
+    "all_convergence_codes_zero": true,
+    "all_hessians_available": true,
+    "all_messages_empty": true,
+    "all_objectives_equal_negative_log_likelihood": true,
+    "method": "BFGS",
+    "model_or_gate_changed": false,
+    "non_positive_definite_hessians": [
+      {
+        "instrument": "BTC-USD",
+        "start_index": 1
+      },
+      {
+        "instrument": "ETH-USD",
+        "start_index": 4
+      }
+    ]
+  },
+  "root_cause": {
+    "attempt_1_effective_nu_natural": [
+      92.1,
+      92.1,
+      92.1,
+      87.1,
+      92.1
+    ],
+    "bug": "The wrapper assigned only nu_1 while FitML reduced the shared transformed nu with min(abs(...)), reflecting lower-half starts into the upper bound region.",
+    "classification_after_fix": "The implementation bug and old ETH occupancy degeneration are resolved. Remaining cross-start differences are genuine distinct optimizer basins plus weak curvature or boundary behavior, not label switching.",
+    "fitml_received_nu_natural_after_both_duplicates_were_set": [
+      97.1,
+      95.1,
+      92.1,
+      87.1,
+      94.1
+    ],
+    "fix": "Set nu_1 and nu_2 consistently, construct the reduced start with f_remove_regimeconstpar(..., for.se=TRUE), and pass that vector to the same default stats::optim BFGS call through a custom OptimFUN.",
+    "intended_and_actually_used_nu_natural": [
+      5,
+      7,
+      10,
+      15,
+      8
+    ],
+    "seeds": {
+      "effective": [
+        20260722,
+        20260723,
+        20260724,
+        20260725,
+        20260726
+      ],
+      "master": 20260722,
+      "note": "set.seed was executed and recorded. Explicit par0 plus deterministic BFGS consumes no stochastic start, so the seeds are operationally inert in these fits."
+    },
+    "start_vectors_verified": true
+  },
+  "run_id": "true-msgarch-attempt-2-20260818T174828Z",
+  "schema_version": 1,
+  "source_preflight_sha256": "31a0da72c0e1f3e434b2e62220c20b1b76ac9dcef6fc8c8f4728c29e5ced5426"
+}

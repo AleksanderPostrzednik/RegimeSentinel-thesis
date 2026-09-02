@@ -1,0 +1,243 @@
+{
+  "$schema": "../../contracts/experiment-protocol.v1.schema.json",
+  "schemaVersion": 1,
+  "protocolId": "thesis-v1",
+  "status": "frozen",
+  "frozenAtUtc": "2026-07-22T04:16:23Z",
+  "objective": "Compare one-step-ahead tail-risk forecasts from a single-regime GARCH(1,1) baseline and a two-regime MS-GARCH candidate without changing the design after observing OOS results.",
+  "data": {
+    "snapshot": {
+      "path": "data/snapshots/btc-eth-daily-close-2021-07-20_2026-07-19.json",
+      "snapshotId": "yahoo-btc-eth-daily-close-2021-07-20_2026-07-19",
+      "fileSha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d",
+      "contentSha256": "1303b59d8059e1ba229dc3f2d353d1b66ca01d416e55e82531ef1fe7ab3a336b",
+      "provider": "Yahoo Finance",
+      "accessMethod": "yfinance 0.2.65",
+      "retrievedAtUtc": "2026-07-20T08:31:29Z",
+      "observedStart": "2021-07-20",
+      "observedEnd": "2026-07-19",
+      "rowCount": 1826
+    },
+    "instruments": [
+      "BTC-USD",
+      "ETH-USD"
+    ],
+    "frequency": "daily",
+    "timezone": "UTC",
+    "priceField": "unadjusted_close",
+    "joinPolicy": "inner_shared_utc_dates",
+    "missingDataPolicy": "fail_no_imputation",
+    "duplicateDatePolicy": "fail",
+    "nonPositivePricePolicy": "fail"
+  },
+  "transformation": {
+    "returnDefinition": "log",
+    "formula": "ln(P_t / P_t-1)",
+    "modelScale": "percent",
+    "scaleFactor": 100,
+    "lossDefinition": "loss_t = -return_t",
+    "centering": {
+      "method": "rolling_training_sample_mean",
+      "reestimatedAtEachRefit": true,
+      "forecastMeanAddedBack": true
+    }
+  },
+  "informationSet": {
+    "forecastHorizonDays": 1,
+    "windowType": "fixed",
+    "estimationWindowReturns": 500,
+    "refitEveryForecasts": 1,
+    "firstForecastDate": "2022-12-03",
+    "lastForecastDate": "2026-07-19",
+    "expectedForecastsPerInstrument": 1325,
+    "forecastOriginRule": "A forecast for t+1 may use observations and fitted state available through t only.",
+    "stateProbabilityForForecast": "filtered",
+    "smoothedProbabilityUse": "post_hoc_only",
+    "hyperparametersSelectedBeforeOos": true
+  },
+  "models": {
+    "baseline": {
+      "modelId": "garch11-studentt",
+      "family": "GARCH",
+      "order": [
+        1,
+        1
+      ],
+      "engine": "python-arch",
+      "estimationMethod": "maximum_likelihood",
+      "conditionalMean": "externally_centered_rolling_constant",
+      "primaryInnovation": "student_t",
+      "robustnessInnovation": "normal",
+      "parameterConstraints": [
+        "omega > 0",
+        "alpha >= 0",
+        "beta >= 0",
+        "alpha + beta < 1",
+        "student_t_df > 2"
+      ]
+    },
+    "regimeCandidate": {
+      "modelId": "msgarch11-2state-studentt",
+      "family": "MS-GARCH",
+      "states": 2,
+      "engine": "R-MSGARCH-FitML",
+      "specification": "Haas-style two-state sGARCH(1,1) with a first-order homogeneous Markov chain",
+      "estimationMethod": "maximum_likelihood",
+      "conditionalMean": "externally_centered_rolling_constant",
+      "primaryInnovation": "student_t",
+      "robustnessInnovation": "normal",
+      "sharedShapeAcrossStates": true,
+      "stateLabelRule": "ascending_unconditional_volatility",
+      "stateInference": {
+        "forecast": "filtered",
+        "smoothed": "post_hoc_only",
+        "viterbi": "post_hoc_path_only"
+      },
+      "preflight": {
+        "usesInitialTrainingWindowOnly": true,
+        "deterministicStarts": 5,
+        "minimumStateOccupancy": 0.05,
+        "transitionRowSumTolerance": 1e-8,
+        "repeatParameterTolerance": 1e-6
+      }
+    },
+    "fallback": {
+      "modelId": "markov-variance-2state-fallback",
+      "family": "Markov-switching variance",
+      "states": 2,
+      "role": "regime_detection_and_density_forecast_fallback",
+      "label": "fallback_not_ms_garch",
+      "engine": "python-statsmodels-markov-regression",
+      "estimationMethod": "maximum_likelihood",
+      "forecastStateProbability": "filtered",
+      "trigger": {
+        "basedOnPredictivePerformance": false,
+        "initialPreflightMustPassForBothInstruments": true,
+        "minimumRollingForecastSuccessRate": 0.99,
+        "action": "rerun_both_instruments_with_fallback_and_keep_failed_msgarch_attempt_as_an_artifact"
+      }
+    }
+  },
+  "risk": {
+    "horizonDays": 1,
+    "confidenceLevels": [
+      0.95,
+      0.99
+    ],
+    "tailProbabilities": [
+      0.05,
+      0.01
+    ],
+    "varConvention": "positive_loss_quantile",
+    "esConvention": "conditional_expected_loss_beyond_var_for_continuous_fitted_distribution",
+    "exceedanceRule": "loss_t > VaR_t",
+    "forecastType": "parametric_from_one_step_predictive_distribution"
+  },
+  "evaluation": {
+    "testSignificance": 0.05,
+    "expectedExceedancesPerInstrument": {
+      "0.95": 66.25,
+      "0.99": 13.25
+    },
+    "varBacktests": [
+      "kupiec_unconditional_coverage",
+      "christoffersen_independence",
+      "christoffersen_conditional_coverage"
+    ],
+    "forecastScores": [
+      "var_quantile_loss",
+      "joint_var_es_fz0"
+    ],
+    "esStandalonePassFailTest": "none",
+    "modelComparisonRule": {
+      "aicBicOnlyIsSufficient": false,
+      "nonRejectionMeansModelIsProvenGood": false,
+      "requiredDimensions": [
+        "fit_and_forecast_success_rate",
+        "parameter_and_state_stability",
+        "var_quantile_loss",
+        "joint_var_es_fz0",
+        "observed_vs_expected_exceedances",
+        "kupiec_and_christoffersen_results"
+      ],
+      "superiorityClaim": "allowed_only_when_oos_scores_improve_without_materially_worse_coverage_or_independence_and_the_pattern_is_reported_separately_for_btc_and_eth"
+    }
+  },
+  "reproducibility": {
+    "masterSeed": 20260722,
+    "timezone": "UTC",
+    "locale": "C",
+    "requiredRunManifestFields": [
+      "protocol_id",
+      "protocol_sha256",
+      "snapshot_id",
+      "snapshot_file_sha256",
+      "git_commit",
+      "runtime_versions",
+      "seed",
+      "started_at_utc",
+      "completed_at_utc",
+      "artifact_sha256"
+    ],
+    "recordAllFitFailures": true,
+    "silentModelSubstitution": false
+  },
+  "changeControl": {
+    "resultsBlindRule": "After the first OOS result is generated, any change to data, window, model, innovation, risk level, fallback trigger, score or test requires a new protocolId and a documented reason.",
+    "allowedWithoutNewProtocol": [
+      "implementation_bug_fix_that_does_not_change_validated_outputs",
+      "documentation_clarification",
+      "additional_logging"
+    ],
+    "requiresNewProtocol": [
+      "snapshot_or_cutoff_change",
+      "window_or_horizon_change",
+      "model_or_innovation_change",
+      "risk_level_or_sign_convention_change",
+      "fallback_trigger_change",
+      "evaluation_metric_or_threshold_change"
+    ]
+  },
+  "literatureAnchors": [
+    {
+      "id": "bollerslev-1986",
+      "url": "https://doi.org/10.1016/0304-4076(86)90063-1",
+      "supports": "GARCH specification and parameter constraints"
+    },
+    {
+      "id": "bollerslev-1987",
+      "url": "https://doi.org/10.2307/1925546",
+      "supports": "Student-t innovations for conditionally heteroskedastic returns"
+    },
+    {
+      "id": "kupiec-1995",
+      "url": "https://doi.org/10.3905/jod.1995.407942",
+      "supports": "unconditional coverage and low power for rare tail probabilities"
+    },
+    {
+      "id": "christoffersen-1998",
+      "url": "https://doi.org/10.2307/2527341",
+      "supports": "independence and conditional coverage of interval forecasts"
+    },
+    {
+      "id": "fissler-ziegel-2016",
+      "url": "https://doi.org/10.1214/16-AOS1439",
+      "supports": "joint elicitability of VaR and ES"
+    },
+    {
+      "id": "patton-ziegel-chen-2019",
+      "url": "https://doi.org/10.1016/j.jeconom.2018.10.008",
+      "supports": "joint VaR-ES scoring including the FZ0 loss"
+    },
+    {
+      "id": "ardia-et-al-2018",
+      "url": "https://doi.org/10.1016/j.ijforecast.2018.05.004",
+      "supports": "rolling downside-risk comparison of single-regime and MS-GARCH models"
+    },
+    {
+      "id": "ardia-et-al-2019-msgarch",
+      "url": "https://doi.org/10.18637/jss.v091.i04",
+      "supports": "Haas-style MSGARCH, maximum-likelihood estimation and one-step density forecasts"
+    }
+  ]
+}

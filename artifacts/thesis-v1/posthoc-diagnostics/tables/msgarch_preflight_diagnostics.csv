@@ -1,0 +1,11 @@
+instrument,start,success,log_likelihood,objective,occupancy_state_1,occupancy_state_2,error_count,log_path,first_error
+BTC-USD,1,true,-1289.1275140006728,1289.1275140006728,0.76092025301772304,0.23907974698227694,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/BTC_USD_start_1.log,NA
+BTC-USD,2,true,-1287.0933753948696,1287.0933753948696,0.51840130168025,0.48159869831975,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/BTC_USD_start_2.log,NA
+BTC-USD,3,true,-1289.0034149265223,1289.0034149265223,0.7353729394913181,0.2646270605086819,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/BTC_USD_start_3.log,NA
+BTC-USD,4,true,-1288.9962907340487,1288.9962907340487,0.73839368078624312,0.26160631921375688,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/BTC_USD_start_4.log,NA
+BTC-USD,5,true,-1288.9860820368021,1288.9860820368021,0.74142783324973771,0.25857216675026234,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/BTC_USD_start_5.log,NA
+ETH-USD,1,true,-1432.3781510371625,1432.3781510371625,0.2945617915602452,0.7054382084397548,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/ETH_USD_start_1.log,NA
+ETH-USD,2,true,-1432.2870073474808,1432.2870073474808,0.15667971126680788,0.84332028873319209,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/ETH_USD_start_2.log,NA
+ETH-USD,3,true,-1432.1423048079112,1432.1423048079112,0.067812930520107881,0.93218706947989216,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/ETH_USD_start_3.log,NA
+ETH-USD,4,true,-1432.3756206088481,1432.3756206088481,0.29466355877858086,0.70533644122141914,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/ETH_USD_start_4.log,NA
+ETH-USD,5,true,-1432.3771200186134,1432.3771200186134,0.29448427770921942,0.70551572229078052,0,artifacts/thesis-v1/runs/true-msgarch-attempt-2-20260818T174828Z/logs/preflight/ETH_USD_start_5.log,NA

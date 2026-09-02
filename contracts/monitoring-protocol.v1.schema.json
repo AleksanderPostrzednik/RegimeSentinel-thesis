@@ -6,7 +6,7 @@
   "additionalProperties": false,
   "required": ["$schema", "protocolId", "mode", "description", "schedule", "data", "estimation", "risk", "history", "publication"],
   "properties": {
-    "$schema": {"const": "../contracts/monitoring-protocol.v1.schema.json"},
+    "$schema": {"const": "../../contracts/monitoring-protocol.v1.schema.json"},
     "protocolId": {"const": "monitoring-v1"},
     "mode": {"const": "operational"},
     "description": {"type": "string", "minLength": 1},
