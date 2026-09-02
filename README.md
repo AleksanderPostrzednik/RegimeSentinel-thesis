@@ -1,58 +1,74 @@
 # RegimeSentinel
 
-Repozytorium dokumentuje pracę magisterską poświęconą porównaniu modeli VaR/ES dla kryptowalut BTC-USD i ETH-USD.
-Projekt łączy analizę statystyczną opartą o modele GARCH i MS-GARCH z warstwą publicznej prezentacji wyników.
-Zakres obejmuje modelowanie jednowymiarowe ryzyka wstępujące przez `GARCH(1,1)` (baseline), kandydacki model przełącznikowy `MS-GARCH`, a wyniki oceniane są przy użyciu testów VaR/ES i procedury rolling backtest.
+RegimeSentinel to pakiet reprodukcyjny pracy magisterskiej o modelowaniu zmienności i jednodniowej prognozie ryzyka dla BTC-USD i ETH-USD. Analiza obejmuje bazowy model `GARCH(1,1)`, dwustanowego kandydata `MS-GARCH` oraz miary `VaR` i `Expected Shortfall` oceniane w rolling backteście.
 
-## Wynik badania
+Repozytorium zawiera zamrożone dane, protokół `thesis-v1`, kod obliczeniowy i artefakty wynikowe. Aplikacja jest warstwą prezentacji tych materiałów: ułatwia odczyt wyników, ograniczeń i pochodzenia danych, ale nie zastępuje pakietu reprodukcyjnego.
 
-- Wariant bazowy `GARCH(1,1)` został wykonany dla obu instrumentów.
-- Integracja `MSGARCH::FitML` została zweryfikowana pod kątem działania technicznego.
-- W drugiej kontrolowanej próbie otrzymano 10/10 poprawnych dopasowań.
-- Zamrożona bramka stabilności nie została zaliczona dla BTC-USD i ETH-USD.
-- W związku z tym rolling OOS MS-GARCH nie został uruchomiony.
-- Model `fallback_not_ms_garch` jest odrębnym modelem zastępczym, nie wynikiem MS-GARCH.
-- Nie wybrano zwycięzcy, ponieważ porównanie OOS MS-GARCH nie powstało zgodnie z zamrożoną ścieżką badawczą.
+## Najważniejszy wynik
+
+Baseline `GARCH(1,1)` wykonano dla obu instrumentów. `MSGARCH::FitML` działał technicznie, a druga kontrolowana próba dała 10/10 poprawnych dopasowań. Kandydat nie przeszedł jednak zamrożonej bramki powtarzalności, dlatego rolling OOS (out-of-sample — na danych spoza dopasowania) MS-GARCH nie został uruchomiony. `fallback_not_ms_garch` jest odrębnym modelem zastępczym i nie jest wynikiem MS-GARCH. Nie wybrano zwycięzcy.
 
 ## Aplikacja
 
-Demo: [https://aleksanderpostrzednik.github.io/RegimeSentinel/](https://aleksanderpostrzednik.github.io/RegimeSentinel/)
+Demo: [RegimeSentinel na GitHub Pages](https://aleksanderpostrzednik.github.io/RegimeSentinel/)
 
-![Aplikacja – widok badania](screenshots/thesis-v1.png)
-![Monitoring – widok operacyjny](screenshots/monitoring.png)
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="screenshots/thesis-btc-overview-dark.png"><img src="screenshots/thesis-btc-overview-dark.png" alt="thesis-v1 — przegląd badania" width="100%"></a><br>
+      <sub>thesis-v1 — przegląd badania</sub>
+    </td>
+    <td width="50%" align="center">
+      <a href="screenshots/thesis-eth-validation-dark.png"><img src="screenshots/thesis-eth-validation-dark.png" alt="thesis-v1 — walidacja i stan modelu" width="100%"></a><br>
+      <sub>thesis-v1 — walidacja i stan modelu</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <a href="screenshots/monitoring-btc-risk-dark.png"><img src="screenshots/monitoring-btc-risk-dark.png" alt="monitoring — ryzyko" width="100%"></a><br>
+      <sub>monitoring — ryzyko</sub>
+    </td>
+    <td width="50%" align="center">
+      <a href="screenshots/monitoring-eth-history-dark.png"><img src="screenshots/monitoring-eth-history-dark.png" alt="monitoring — historia i pochodzenie" width="100%"></a><br>
+      <sub>monitoring — historia i pochodzenie</sub>
+    </td>
+  </tr>
+</table>
 
-Aplikacja jest warstwą prezentacji wyników, natomiast publiczne repozytorium reprodukcyjne koncentruje się na kodzie i danych użytych w analizach.
+## Zawartość repozytorium
 
-## Zawartość repo
+- `experiments/thesis-v1/` — zamrożony protokół eksperymentu i jego konfiguracja.
+- `data/snapshots/` — wersjonowane snapshoty danych wejściowych.
+- `worker/` — kod obliczeniowy i pipeline reprodukcyjny.
+- `artifacts/thesis-v1/` — artefakty wynikowe, manifesty i raporty.
+- `contracts/` — kontrakty danych i schematy walidacyjne.
+- `screenshots/` — obrazy użyte w galerii aplikacji.
 
-- `data/` — zamrożone zbiory wejściowe i pliki pochodzące z pobrania źródłowego.
-- `protocol/` — definicje kontraktów eksperymentu, metryk oraz reguł porównania.
-- `worker/` — silnik obliczeniowy, skrypty i logika pipeline'u.
-- `artifacts/` — wygenerowane wyniki, manifesty, raporty i ślady uruchomień.
-- `contracts/` — jawne kontrakty wejściowe i pomocnicze schematy.
+## Odtworzenie wyników
 
-## Reprodukcja
+Pełna instrukcja znajduje się w [REPRODUCIBILITY.md](REPRODUCIBILITY.md). Opisuje przygotowanie środowiska, walidację zamrożonych wejść, uruchomienie obliczeń oraz kontrolę manifestów i hashy.
 
-Instrukcja reprodukcji: [Instrukcja reprodukcji](REPRODUCIBILITY.md)
+Chronologia ma znaczenie: `fallback_not_ms_garch` powstał przed dwiema kontrolowanymi próbami `MSGARCH::FitML`. Druga próba dała 10/10 poprawnych dopasowań, ale nie spełniła kryterium powtarzalności. Fallback jest odrębnym modelem i nie zastępuje wyniku MS-GARCH.
 
-## Granice
+## Jak czytać historyczne artefakty
 
-- Badanie obejmuje tylko dwa instrumenty: BTC-USD i ETH-USD.
-- Dane mają częstotliwość dzienną.
-- Użyto jednego okresu historycznego.
-- Brak rolling OOS MS-GARCH wynika z niezaliczenia zamrożonej bramki stabilności.
-- `fallback_not_ms_garch` nie jest modelem MS-GARCH.
+Artefakty baseline’u pokazują wykonane obliczenia `GARCH(1,1)`. Artefakty prób `MSGARCH::FitML` dokumentują działanie techniczne dopasowania oraz wynik zamrożonej bramki. Artefakty `fallback_not_ms_garch` opisują odrębny model zastępczy. Żaden z tych materiałów nie oznacza wykonania rolling OOS MS-GARCH ani wyboru zwycięzcy.
 
-## Źródło danych
+## Dane i licencja
 
-Dane pochodzą z Yahoo Finance.
+Kod jest udostępniony na licencji MIT. Dane pochodzą z Yahoo Finance; licencja MIT nie obejmuje praw do danych źródłowych. Szczegóły dotyczące danych opisuje `DATA_NOTICE.md`.
 
-Okres badania: 20.07.2021–19.07.2026.
+## Granice badania
 
-## Praca
+- Zakres obejmuje BTC-USD i ETH-USD oraz dane dzienne.
+- Analiza korzysta z jednego zamrożonego snapshotu i jednego protokołu `thesis-v1`.
+- Bazowy `GARCH(1,1)` został wykonany, natomiast rolling OOS MS-GARCH nie został uruchomiony po niezaliczeniu bramki powtarzalności.
+- `fallback_not_ms_garch` jest odrębnym modelem zastępczym, a nie modelem MS-GARCH.
+- Wyniki nie uzasadniają wskazania jednego zwycięskiego modelu.
 
-Tytuł: „Detekcja zmian reżimu ryzyka: modele przełącznikowe i GARCH oraz walidacja VaR/ES w rolling backtest”
+## Praca magisterska
 
-Autor: Aleksander Postrzednik
+**Tytuł:** „Detekcja zmian reżimu ryzyka: modele przełącznikowe i GARCH oraz walidacja VaR/ES w rolling backtest”
 
-Uniwersytet Ekonomiczny w Krakowie.
+**Autor:** Aleksander Postrzednik
+**Uczelnia:** Uniwersytet Ekonomiczny w Krakowie
