@@ -1,1 +1,0 @@
-"""TODO: plotting artifacts placeholder."""

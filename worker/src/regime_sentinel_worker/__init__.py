@@ -1,1 +1,1 @@
-"""TODO: worker package init."""
+"""RegimeSentinel thesis research worker."""

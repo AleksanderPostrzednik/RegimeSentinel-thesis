@@ -1,1 +1,0 @@
-"""TODO: persistence stage placeholder."""
