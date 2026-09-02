@@ -1,0 +1,102 @@
+{
+  "fit_failure_count": 9,
+  "fit_success_count": 1316,
+  "fit_success_rate": 0.9932075471698113,
+  "forecast_count": 1325,
+  "innovation": "normal",
+  "instrument": "ETH-USD",
+  "risk": {
+    "0.95": {
+      "christoffersen_conditional_coverage": {
+        "exceedances": 59,
+        "n_observations": 1316,
+        "p_value": 0.11675805973638811,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 4.29530270134245,
+        "tail_probability": 0.050000000000000044,
+        "test": "christoffersen_conditional_coverage",
+        "valid": true
+      },
+      "christoffersen_independence": {
+        "exceedances": 59,
+        "n_observations": 1316,
+        "p_value": 0.060263933956995405,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 3.5301060369234847,
+        "tail_probability": 0.050000000000000044,
+        "test": "christoffersen_independence",
+        "valid": true
+      },
+      "confidence": 0.95,
+      "expected_exceedances_full_oos": 66.25000000000006,
+      "expected_exceedances_valid": 65.80000000000005,
+      "fit_success_rate": 0.9932075471698113,
+      "forecast_count": 1325,
+      "kupiec": {
+        "exceedances": 59,
+        "n_observations": 1316,
+        "p_value": 0.38170711670011526,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.7651966644189656,
+        "tail_probability": 0.050000000000000044,
+        "test": "kupiec_unconditional_coverage",
+        "valid": true
+      },
+      "mean_fz0_score": 2.030391744269419,
+      "mean_var_quantile_loss": 0.38001470122690767,
+      "n_exceedances": 59,
+      "n_valid_forecasts": 1316,
+      "observed_exceedance_rate": 0.044832826747720364,
+      "tail_probability": 0.050000000000000044
+    },
+    "0.99": {
+      "christoffersen_conditional_coverage": {
+        "exceedances": 25,
+        "n_observations": 1316,
+        "p_value": 0.011256012779198356,
+        "reason": null,
+        "reject_at_5pct": true,
+        "statistic": 8.973705647694914,
+        "tail_probability": 0.010000000000000009,
+        "test": "christoffersen_conditional_coverage",
+        "valid": true
+      },
+      "christoffersen_independence": {
+        "exceedances": 25,
+        "n_observations": 1316,
+        "p_value": 0.4971181509298749,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.4610832471195465,
+        "tail_probability": 0.010000000000000009,
+        "test": "christoffersen_independence",
+        "valid": true
+      },
+      "confidence": 0.99,
+      "expected_exceedances_full_oos": 13.250000000000012,
+      "expected_exceedances_valid": 13.16000000000001,
+      "fit_success_rate": 0.9932075471698113,
+      "forecast_count": 1325,
+      "kupiec": {
+        "exceedances": 25,
+        "n_observations": 1316,
+        "p_value": 0.003526914309877979,
+        "reason": null,
+        "reject_at_5pct": true,
+        "statistic": 8.512622400575367,
+        "tail_probability": 0.010000000000000009,
+        "test": "kupiec_unconditional_coverage",
+        "valid": true
+      },
+      "mean_fz0_score": 2.5161601865640786,
+      "mean_var_quantile_loss": 0.11701135986009514,
+      "n_exceedances": 25,
+      "n_valid_forecasts": 1316,
+      "observed_exceedance_rate": 0.018996960486322188,
+      "tail_probability": 0.010000000000000009
+    }
+  }
+}

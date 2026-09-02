@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://regimesentinel.local/contracts/monitoring-history.v1.schema.json",
+  "title": "RegimeSentinel monitoring-v1 daily history",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "protocolId",
+    "runId",
+    "generatedAtUtc",
+    "state",
+    "historyWindow",
+    "definitions",
+    "instruments",
+    "provenance"
+  ],
+  "properties": {
+    "schemaVersion": { "const": "monitoring-history.v1" },
+    "protocolId": { "const": "monitoring-v1" },
+    "runId": {
+      "type": "string",
+      "pattern": "^monitoring-v1-[0-9]{8}T[0-9]{6}Z$"
+    },
+    "generatedAtUtc": { "type": "string", "minLength": 20 },
+    "state": { "const": "complete" },
+    "historyWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "startDateUtc",
+        "endDateUtc",
+        "pointCount",
+        "timezone",
+        "closedDaysOnly",
+        "availableRangesDays"
+      ],
+      "properties": {
+        "startDateUtc": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            { "type": "null" }
+          ]
+        },
+        "endDateUtc": {
+          "anyOf": [
+            { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            { "type": "null" }
+          ]
+        },
+        "pointCount": { "type": "integer", "minimum": 0, "maximum": 180 },
+        "timezone": { "const": "UTC" },
+        "closedDaysOnly": { "const": true },
+        "availableRangesDays": { "const": [30, 90, 180] }
+      }
+    },
+    "definitions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["dailyReturn", "realizedVolatility"],
+      "properties": {
+        "dailyReturn": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method", "formula", "unit"],
+          "properties": {
+            "method": { "const": "log" },
+            "formula": { "const": "100 * ln(close_t / close_t-1)" },
+            "unit": { "const": "percent_return" }
+          }
+        },
+        "realizedVolatility": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["method", "windowsDays", "unit", "annualized"],
+          "properties": {
+            "method": { "const": "population_standard_deviation" },
+            "windowsDays": { "const": [7, 30] },
+            "unit": { "const": "percent_return" },
+            "annualized": { "const": false }
+          }
+        }
+      }
+    },
+    "instruments": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": { "$ref": "#/$defs/instrumentHistory" }
+    },
+    "provenance": { "$ref": "#/$defs/provenance" }
+  },
+  "$defs": {
+    "nullableNumber": {
+      "anyOf": [{ "type": "number" }, { "type": "null" }]
+    },
+    "nullableNonnegativeNumber": {
+      "anyOf": [{ "type": "number", "minimum": 0 }, { "type": "null" }]
+    },
+    "historyPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dateUtc",
+        "closeUsd",
+        "dailyReturnPercent",
+        "realizedVolatility7dPercent",
+        "realizedVolatility30dPercent",
+        "isLatest"
+      ],
+      "properties": {
+        "dateUtc": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+        },
+        "closeUsd": { "type": "number", "exclusiveMinimum": 0 },
+        "dailyReturnPercent": { "$ref": "#/$defs/nullableNumber" },
+        "realizedVolatility7dPercent": {
+          "$ref": "#/$defs/nullableNonnegativeNumber"
+        },
+        "realizedVolatility30dPercent": {
+          "$ref": "#/$defs/nullableNonnegativeNumber"
+        },
+        "isLatest": { "type": "boolean" }
+      }
+    },
+    "instrumentHistory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["instrument", "points"],
+      "properties": {
+        "instrument": { "enum": ["BTC-USD", "ETH-USD"] },
+        "points": {
+          "type": "array",
+          "maxItems": 180,
+          "items": { "$ref": "#/$defs/historyPoint" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataKind",
+        "provider",
+        "accessMethod",
+        "sourceUrls",
+        "priceField",
+        "timezone",
+        "retrievedAtUtc",
+        "snapshotId",
+        "snapshotFileSha256",
+        "snapshotContentSha256",
+        "protocolSha256",
+        "codeCommit"
+      ],
+      "properties": {
+        "dataKind": { "const": "real" },
+        "provider": { "const": "Yahoo Finance" },
+        "accessMethod": { "const": "yfinance 0.2.65" },
+        "sourceUrls": {
+          "type": "array",
+          "minItems": 2,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "priceField": { "const": "unadjusted_close" },
+        "timezone": { "const": "UTC" },
+        "retrievedAtUtc": { "type": "string", "minLength": 20 },
+        "snapshotId": { "type": "string", "minLength": 1 },
+        "snapshotFileSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "snapshotContentSha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "protocolSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "codeCommit": { "type": "string", "minLength": 1 }
+      }
+    }
+  }
+}

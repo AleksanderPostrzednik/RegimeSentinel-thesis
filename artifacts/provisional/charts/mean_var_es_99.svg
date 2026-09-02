@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1200 620">
+<title id="title">PROVISIONAL — Mean VaR and ES at 99% by instrument and provisional variant</title>
+<desc id="desc">PROVISIONAL — exploratory artifact summary; no canonical model selected and no superiority claim is made. Mean positive loss (%)</desc>
+<rect width="1200" height="620" fill="#ffffff"/>
+<text x="100" y="34" font-family="sans-serif" font-size="22" font-weight="600" fill="#17202a">Mean VaR and ES at 99% by instrument and provisional variant</text>
+<text x="100" y="60" font-family="sans-serif" font-size="13" fill="#5b6670">PROVISIONAL — exploratory artifact summary; no canonical model selected and no superiority claim is made.</text>
+<line x1="100" y1="96" x2="100" y2="510" stroke="#34495e"/>
+<line x1="100" y1="510" x2="1160" y2="510" stroke="#34495e"/>
+<text transform="translate(24 303.0) rotate(-90)" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#34495e">Mean positive loss (%)</text>
+<line x1="100" y1="510.00" x2="1160" y2="510.00" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="515.00" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.00</text>
+<line x1="100" y1="427.20" x2="1160" y2="427.20" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="432.20" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">3.26</text>
+<line x1="100" y1="344.40" x2="1160" y2="344.40" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="349.40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">6.52</text>
+<line x1="100" y1="261.60" x2="1160" y2="261.60" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="266.60" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">9.77</text>
+<line x1="100" y1="178.80" x2="1160" y2="178.80" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="183.80" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">13.03</text>
+<line x1="100" y1="96.00" x2="1160" y2="96.00" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="101.00" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">16.29</text>
+<rect x="149.69" y="327.21" width="35.28" height="182.79" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 7.192830</title></rect>
+<rect x="191.69" y="231.98" width="35.28" height="278.02" fill="#b36b2c" data-series="mean ES"><title>mean ES: 10.940185</title></rect>
+<text x="188.33" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="188.33" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) Student-t</text>
+<rect x="326.36" y="361.70" width="35.28" height="148.30" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 5.835518</title></rect>
+<rect x="368.36" y="339.83" width="35.28" height="170.17" fill="#b36b2c" data-series="mean ES"><title>mean ES: 6.696269</title></rect>
+<text x="365.00" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="365.00" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) normal</text>
+<rect x="503.03" y="323.34" width="35.28" height="186.66" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 7.345057</title></rect>
+<rect x="545.03" y="284.75" width="35.28" height="225.25" fill="#b36b2c" data-series="mean ES"><title>mean ES: 8.863710</title></rect>
+<text x="541.67" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="541.67" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">fallback_not_ms_garch</text>
+<rect x="679.69" y="265.93" width="35.28" height="244.07" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 9.603975</title></rect>
+<rect x="721.69" y="150.00" width="35.28" height="360.00" fill="#b36b2c" data-series="mean ES"><title>mean ES: 14.165974</title></rect>
+<text x="718.33" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="718.33" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) Student-t</text>
+<rect x="856.36" y="312.46" width="35.28" height="197.54" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 7.773146</title></rect>
+<rect x="898.36" y="283.66" width="35.28" height="226.34" fill="#b36b2c" data-series="mean ES"><title>mean ES: 8.906443</title></rect>
+<text x="895.00" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="895.00" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) normal</text>
+<rect x="1033.03" y="261.83" width="35.28" height="248.17" fill="#2f6f9f" data-series="mean VaR"><title>mean VaR: 9.765428</title></rect>
+<rect x="1075.03" y="206.89" width="35.28" height="303.11" fill="#b36b2c" data-series="mean ES"><title>mean ES: 11.927185</title></rect>
+<text x="1071.67" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="1071.67" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">fallback_not_ms_garch</text>
+<rect x="100.0" y="76" width="12" height="12" fill="#2f6f9f"/>
+<text x="118.0" y="87" font-family="sans-serif" font-size="12" fill="#34495e">mean VaR</text>
+<rect x="630.0" y="76" width="12" height="12" fill="#b36b2c"/>
+<text x="648.0" y="87" font-family="sans-serif" font-size="12" fill="#34495e">mean ES</text>
+</svg>

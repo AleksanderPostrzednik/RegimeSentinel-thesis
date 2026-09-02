@@ -1,0 +1,814 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://regimesentinel.local/contracts/experiment-protocol.v1.schema.json",
+  "title": "RegimeSentinel Thesis Experiment Protocol v1",
+  "description": "Frozen, result-blind contract for the BTC/ETH rolling risk experiment.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "schemaVersion",
+    "protocolId",
+    "status",
+    "frozenAtUtc",
+    "objective",
+    "data",
+    "transformation",
+    "informationSet",
+    "models",
+    "risk",
+    "evaluation",
+    "reproducibility",
+    "changeControl",
+    "literatureAnchors"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "../contracts/experiment-protocol.v1.schema.json"
+    },
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "protocolId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "status": {
+      "type": "string",
+      "const": "frozen"
+    },
+    "frozenAtUtc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "objective": {
+      "type": "string",
+      "minLength": 40
+    },
+    "data": {
+      "$ref": "#/$defs/data"
+    },
+    "transformation": {
+      "$ref": "#/$defs/transformation"
+    },
+    "informationSet": {
+      "$ref": "#/$defs/informationSet"
+    },
+    "models": {
+      "$ref": "#/$defs/models"
+    },
+    "risk": {
+      "$ref": "#/$defs/risk"
+    },
+    "evaluation": {
+      "$ref": "#/$defs/evaluation"
+    },
+    "reproducibility": {
+      "$ref": "#/$defs/reproducibility"
+    },
+    "changeControl": {
+      "$ref": "#/$defs/changeControl"
+    },
+    "literatureAnchors": {
+      "type": "array",
+      "minItems": 8,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/literatureAnchor"
+      }
+    }
+  },
+  "$defs": {
+    "closedObject": {
+      "type": "object",
+      "additionalProperties": false
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "probability": {
+      "type": "number",
+      "exclusiveMinimum": 0,
+      "exclusiveMaximum": 1
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "snapshot",
+        "instruments",
+        "frequency",
+        "timezone",
+        "priceField",
+        "joinPolicy",
+        "missingDataPolicy",
+        "duplicateDatePolicy",
+        "nonPositivePricePolicy"
+      ],
+      "properties": {
+        "snapshot": {
+          "$ref": "#/$defs/snapshot"
+        },
+        "instruments": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": "BTC-USD"
+            },
+            {
+              "const": "ETH-USD"
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "frequency": {
+          "const": "daily"
+        },
+        "timezone": {
+          "const": "UTC"
+        },
+        "priceField": {
+          "const": "unadjusted_close"
+        },
+        "joinPolicy": {
+          "const": "inner_shared_utc_dates"
+        },
+        "missingDataPolicy": {
+          "const": "fail_no_imputation"
+        },
+        "duplicateDatePolicy": {
+          "const": "fail"
+        },
+        "nonPositivePricePolicy": {
+          "const": "fail"
+        }
+      }
+    },
+    "snapshot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "snapshotId",
+        "fileSha256",
+        "contentSha256",
+        "provider",
+        "accessMethod",
+        "retrievedAtUtc",
+        "observedStart",
+        "observedEnd",
+        "rowCount"
+      ],
+      "properties": {
+        "path": {
+          "type": "string",
+          "pattern": "^data/snapshots/[a-z0-9._-]+\\.json$"
+        },
+        "snapshotId": {
+          "type": "string",
+          "minLength": 20
+        },
+        "fileSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "contentSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "provider": {
+          "const": "Yahoo Finance"
+        },
+        "accessMethod": {
+          "type": "string",
+          "pattern": "^yfinance [0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "retrievedAtUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "observedStart": {
+          "type": "string",
+          "format": "date"
+        },
+        "observedEnd": {
+          "type": "string",
+          "format": "date"
+        },
+        "rowCount": {
+          "type": "integer",
+          "minimum": 501
+        }
+      }
+    },
+    "transformation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "returnDefinition",
+        "formula",
+        "modelScale",
+        "scaleFactor",
+        "lossDefinition",
+        "centering"
+      ],
+      "properties": {
+        "returnDefinition": {
+          "const": "log"
+        },
+        "formula": {
+          "const": "ln(P_t / P_t-1)"
+        },
+        "modelScale": {
+          "const": "percent"
+        },
+        "scaleFactor": {
+          "const": 100
+        },
+        "lossDefinition": {
+          "const": "loss_t = -return_t"
+        },
+        "centering": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "method",
+            "reestimatedAtEachRefit",
+            "forecastMeanAddedBack"
+          ],
+          "properties": {
+            "method": {
+              "const": "rolling_training_sample_mean"
+            },
+            "reestimatedAtEachRefit": {
+              "const": true
+            },
+            "forecastMeanAddedBack": {
+              "const": true
+            }
+          }
+        }
+      }
+    },
+    "informationSet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "forecastHorizonDays",
+        "windowType",
+        "estimationWindowReturns",
+        "refitEveryForecasts",
+        "firstForecastDate",
+        "lastForecastDate",
+        "expectedForecastsPerInstrument",
+        "forecastOriginRule",
+        "stateProbabilityForForecast",
+        "smoothedProbabilityUse",
+        "hyperparametersSelectedBeforeOos"
+      ],
+      "properties": {
+        "forecastHorizonDays": {
+          "const": 1
+        },
+        "windowType": {
+          "const": "fixed"
+        },
+        "estimationWindowReturns": {
+          "type": "integer",
+          "minimum": 250
+        },
+        "refitEveryForecasts": {
+          "const": 1
+        },
+        "firstForecastDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "lastForecastDate": {
+          "type": "string",
+          "format": "date"
+        },
+        "expectedForecastsPerInstrument": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "forecastOriginRule": {
+          "type": "string",
+          "minLength": 40
+        },
+        "stateProbabilityForForecast": {
+          "const": "filtered"
+        },
+        "smoothedProbabilityUse": {
+          "const": "post_hoc_only"
+        },
+        "hyperparametersSelectedBeforeOos": {
+          "const": true
+        }
+      }
+    },
+    "models": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "baseline",
+        "regimeCandidate",
+        "fallback"
+      ],
+      "properties": {
+        "baseline": {
+          "$ref": "#/$defs/baseline"
+        },
+        "regimeCandidate": {
+          "$ref": "#/$defs/regimeCandidate"
+        },
+        "fallback": {
+          "$ref": "#/$defs/fallback"
+        }
+      }
+    },
+    "baseline": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelId",
+        "family",
+        "order",
+        "engine",
+        "estimationMethod",
+        "conditionalMean",
+        "primaryInnovation",
+        "robustnessInnovation",
+        "parameterConstraints"
+      ],
+      "properties": {
+        "modelId": {
+          "const": "garch11-studentt"
+        },
+        "family": {
+          "const": "GARCH"
+        },
+        "order": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": 1
+            },
+            {
+              "const": 1
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "engine": {
+          "const": "python-arch"
+        },
+        "estimationMethod": {
+          "const": "maximum_likelihood"
+        },
+        "conditionalMean": {
+          "const": "externally_centered_rolling_constant"
+        },
+        "primaryInnovation": {
+          "const": "student_t"
+        },
+        "robustnessInnovation": {
+          "const": "normal"
+        },
+        "parameterConstraints": {
+          "type": "array",
+          "minItems": 5,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "regimeCandidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelId",
+        "family",
+        "states",
+        "engine",
+        "specification",
+        "estimationMethod",
+        "conditionalMean",
+        "primaryInnovation",
+        "robustnessInnovation",
+        "sharedShapeAcrossStates",
+        "stateLabelRule",
+        "stateInference",
+        "preflight"
+      ],
+      "properties": {
+        "modelId": {
+          "const": "msgarch11-2state-studentt"
+        },
+        "family": {
+          "const": "MS-GARCH"
+        },
+        "states": {
+          "const": 2
+        },
+        "engine": {
+          "const": "R-MSGARCH-FitML"
+        },
+        "specification": {
+          "type": "string",
+          "minLength": 40
+        },
+        "estimationMethod": {
+          "const": "maximum_likelihood"
+        },
+        "conditionalMean": {
+          "const": "externally_centered_rolling_constant"
+        },
+        "primaryInnovation": {
+          "const": "student_t"
+        },
+        "robustnessInnovation": {
+          "const": "normal"
+        },
+        "sharedShapeAcrossStates": {
+          "const": true
+        },
+        "stateLabelRule": {
+          "const": "ascending_unconditional_volatility"
+        },
+        "stateInference": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "forecast",
+            "smoothed",
+            "viterbi"
+          ],
+          "properties": {
+            "forecast": {
+              "const": "filtered"
+            },
+            "smoothed": {
+              "const": "post_hoc_only"
+            },
+            "viterbi": {
+              "const": "post_hoc_path_only"
+            }
+          }
+        },
+        "preflight": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "usesInitialTrainingWindowOnly",
+            "deterministicStarts",
+            "minimumStateOccupancy",
+            "transitionRowSumTolerance",
+            "repeatParameterTolerance"
+          ],
+          "properties": {
+            "usesInitialTrainingWindowOnly": {
+              "const": true
+            },
+            "deterministicStarts": {
+              "type": "integer",
+              "minimum": 3
+            },
+            "minimumStateOccupancy": {
+              "type": "number",
+              "minimum": 0.01,
+              "maximum": 0.25
+            },
+            "transitionRowSumTolerance": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 0.000001
+            },
+            "repeatParameterTolerance": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 0.0001
+            }
+          }
+        }
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "modelId",
+        "family",
+        "states",
+        "role",
+        "label",
+        "engine",
+        "estimationMethod",
+        "forecastStateProbability",
+        "trigger"
+      ],
+      "properties": {
+        "modelId": {
+          "const": "markov-variance-2state-fallback"
+        },
+        "family": {
+          "const": "Markov-switching variance"
+        },
+        "states": {
+          "const": 2
+        },
+        "role": {
+          "const": "regime_detection_and_density_forecast_fallback"
+        },
+        "label": {
+          "const": "fallback_not_ms_garch"
+        },
+        "engine": {
+          "const": "python-statsmodels-markov-regression"
+        },
+        "estimationMethod": {
+          "const": "maximum_likelihood"
+        },
+        "forecastStateProbability": {
+          "const": "filtered"
+        },
+        "trigger": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "basedOnPredictivePerformance",
+            "initialPreflightMustPassForBothInstruments",
+            "minimumRollingForecastSuccessRate",
+            "action"
+          ],
+          "properties": {
+            "basedOnPredictivePerformance": {
+              "const": false
+            },
+            "initialPreflightMustPassForBothInstruments": {
+              "const": true
+            },
+            "minimumRollingForecastSuccessRate": {
+              "type": "number",
+              "minimum": 0.95,
+              "maximum": 1
+            },
+            "action": {
+              "const": "rerun_both_instruments_with_fallback_and_keep_failed_msgarch_attempt_as_an_artifact"
+            }
+          }
+        }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "horizonDays",
+        "confidenceLevels",
+        "tailProbabilities",
+        "varConvention",
+        "esConvention",
+        "exceedanceRule",
+        "forecastType"
+      ],
+      "properties": {
+        "horizonDays": {
+          "const": 1
+        },
+        "confidenceLevels": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": 0.95
+            },
+            {
+              "const": 0.99
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "tailProbabilities": {
+          "type": "array",
+          "prefixItems": [
+            {
+              "const": 0.05
+            },
+            {
+              "const": 0.01
+            }
+          ],
+          "items": false,
+          "minItems": 2,
+          "maxItems": 2
+        },
+        "varConvention": {
+          "const": "positive_loss_quantile"
+        },
+        "esConvention": {
+          "const": "conditional_expected_loss_beyond_var_for_continuous_fitted_distribution"
+        },
+        "exceedanceRule": {
+          "const": "loss_t > VaR_t"
+        },
+        "forecastType": {
+          "const": "parametric_from_one_step_predictive_distribution"
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "testSignificance",
+        "expectedExceedancesPerInstrument",
+        "varBacktests",
+        "forecastScores",
+        "esStandalonePassFailTest",
+        "modelComparisonRule"
+      ],
+      "properties": {
+        "testSignificance": {
+          "const": 0.05
+        },
+        "expectedExceedancesPerInstrument": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "0.95",
+            "0.99"
+          ],
+          "properties": {
+            "0.95": {
+              "type": "number",
+              "minimum": 0
+            },
+            "0.99": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "varBacktests": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "kupiec_unconditional_coverage",
+              "christoffersen_independence",
+              "christoffersen_conditional_coverage"
+            ]
+          }
+        },
+        "forecastScores": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "var_quantile_loss",
+              "joint_var_es_fz0"
+            ]
+          }
+        },
+        "esStandalonePassFailTest": {
+          "const": "none"
+        },
+        "modelComparisonRule": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "aicBicOnlyIsSufficient",
+            "nonRejectionMeansModelIsProvenGood",
+            "requiredDimensions",
+            "superiorityClaim"
+          ],
+          "properties": {
+            "aicBicOnlyIsSufficient": {
+              "const": false
+            },
+            "nonRejectionMeansModelIsProvenGood": {
+              "const": false
+            },
+            "requiredDimensions": {
+              "type": "array",
+              "minItems": 6,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 5
+              }
+            },
+            "superiorityClaim": {
+              "type": "string",
+              "minLength": 80
+            }
+          }
+        }
+      }
+    },
+    "reproducibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "masterSeed",
+        "timezone",
+        "locale",
+        "requiredRunManifestFields",
+        "recordAllFitFailures",
+        "silentModelSubstitution"
+      ],
+      "properties": {
+        "masterSeed": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timezone": {
+          "const": "UTC"
+        },
+        "locale": {
+          "const": "C"
+        },
+        "requiredRunManifestFields": {
+          "type": "array",
+          "minItems": 10,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9_]*$"
+          }
+        },
+        "recordAllFitFailures": {
+          "const": true
+        },
+        "silentModelSubstitution": {
+          "const": false
+        }
+      }
+    },
+    "changeControl": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "resultsBlindRule",
+        "allowedWithoutNewProtocol",
+        "requiresNewProtocol"
+      ],
+      "properties": {
+        "resultsBlindRule": {
+          "type": "string",
+          "minLength": 100
+        },
+        "allowedWithoutNewProtocol": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "requiresNewProtocol": {
+          "type": "array",
+          "minItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "literatureAnchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "url",
+        "supports"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "supports": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    }
+  }
+}

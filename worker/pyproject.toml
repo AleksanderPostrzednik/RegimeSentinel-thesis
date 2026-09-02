@@ -1,0 +1,16 @@
+[project]
+name = "regime-sentinel-worker"
+version = "0.0.0"
+description = "Reproducible thesis-v1 baseline and regime-risk worker"
+requires-python = ">=3.10"
+dependencies = [
+  "yfinance==0.2.65",
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "arch>=7.0",
+  "statsmodels>=0.14",
+]
+
+[project.scripts]
+regime-sentinel-worker = "regime_sentinel_worker.main:main"
+regime-sentinel-monitoring = "regime_sentinel_worker.monitoring:main"

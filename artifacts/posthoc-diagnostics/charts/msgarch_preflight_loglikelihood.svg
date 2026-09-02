@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="975" viewBox="0 0 1500 975" role="img">
+<title>MSGARCH preflight: start and log-likelihood/objective</title>
+<desc>POST_HOC_DESCRIPTIVE chart from existing thesis-v1 forecasts.</desc>
+<rect width="100%" height="100%" fill="#fffdf8"/>
+<text x="750.00" y="38.00" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#111827">MSGARCH preflight: start and log-likelihood/objective</text>
+<text x="100.00" y="57.00" font-family="sans-serif" font-size="18" text-anchor="start" fill="#111827">BTC-USD</text>
+<text x="35.00" y="244.00" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#111827">value</text>
+<line x1="100" y1="413" x2="1465" y2="413" stroke="#374151"/>
+<line x1="100" y1="75" x2="100" y2="413" stroke="#374151"/>
+<line x1="100" y1="413.00" x2="1465" y2="413.00" stroke="#e5e7eb"/>
+<text x="90.00" y="418.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1289</text>
+<line x1="100" y1="328.50" x2="1465" y2="328.50" stroke="#e5e7eb"/>
+<text x="90.00" y="333.50" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1289</text>
+<line x1="100" y1="244.00" x2="1465" y2="244.00" stroke="#e5e7eb"/>
+<text x="90.00" y="249.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1288</text>
+<line x1="100" y1="159.50" x2="1465" y2="159.50" stroke="#e5e7eb"/>
+<text x="90.00" y="164.50" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1288</text>
+<line x1="100" y1="75.00" x2="1465" y2="75.00" stroke="#e5e7eb"/>
+<text x="90.00" y="80.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1287</text>
+<text x="100.00" y="438.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 1</text>
+<text x="441.25" y="438.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 2</text>
+<text x="782.50" y="438.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 3</text>
+<text x="1123.75" y="438.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 4</text>
+<text x="1465.00" y="438.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 5</text>
+<path d="M100.00,394.89 L441.25,93.11 L782.50,376.48 L1123.75,375.42 L1465.00,373.91" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<line x1="100" y1="33" x2="128" y2="33" stroke="#7c3aed" stroke-width="3"/>
+<text x="136.00" y="38.00" font-family="sans-serif" font-size="12" text-anchor="start" fill="#111827">log-likelihood / objective</text>
+<text x="100.00" y="487.00" font-family="sans-serif" font-size="18" text-anchor="start" fill="#111827">ETH-USD</text>
+<text x="35.00" y="674.00" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#111827">value</text>
+<line x1="100" y1="843" x2="1465" y2="843" stroke="#374151"/>
+<line x1="100" y1="505" x2="100" y2="843" stroke="#374151"/>
+<line x1="100" y1="843.00" x2="1465" y2="843.00" stroke="#e5e7eb"/>
+<text x="90.00" y="848.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1432</text>
+<line x1="100" y1="758.50" x2="1465" y2="758.50" stroke="#e5e7eb"/>
+<text x="90.00" y="763.50" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1432</text>
+<line x1="100" y1="674.00" x2="1465" y2="674.00" stroke="#e5e7eb"/>
+<text x="90.00" y="679.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1432</text>
+<line x1="100" y1="589.50" x2="1465" y2="589.50" stroke="#e5e7eb"/>
+<text x="90.00" y="594.50" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1432</text>
+<line x1="100" y1="505.00" x2="1465" y2="505.00" stroke="#e5e7eb"/>
+<text x="90.00" y="510.00" font-family="sans-serif" font-size="11" text-anchor="end" fill="#111827">-1432</text>
+<text x="100.00" y="868.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 1</text>
+<text x="441.25" y="868.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 2</text>
+<text x="782.50" y="868.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 3</text>
+<text x="1123.75" y="868.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 4</text>
+<text x="1465.00" y="868.00" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#111827">start 5</text>
+<path d="M100.00,824.89 L441.25,708.27 L782.50,523.11 L1123.75,821.65 L1465.00,823.57" fill="none" stroke="#7c3aed" stroke-width="2"/>
+<line x1="100" y1="463" x2="128" y2="463" stroke="#7c3aed" stroke-width="3"/>
+<text x="136.00" y="468.00" font-family="sans-serif" font-size="12" text-anchor="start" fill="#111827">log-likelihood / objective</text>
+</svg>

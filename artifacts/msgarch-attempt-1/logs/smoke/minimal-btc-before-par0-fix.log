@@ -1,0 +1,4 @@
+STATUS	error
+ERROR	replacement has length zero
+
+--- STDERR ---

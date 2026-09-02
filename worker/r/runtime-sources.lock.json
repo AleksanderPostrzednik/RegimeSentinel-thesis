@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "micromamba": {
+    "version": "2.9.0-0",
+    "url": "https://github.com/mamba-org/micromamba-releases/releases/download/2.9.0-0/micromamba-linux-64",
+    "sha256": "366cd9cd8be14df1ab8ed50352a82111082a36686b2d389fdb79a92c3fafb3e3"
+  },
+  "cran": [
+    {
+      "name": "fanplot",
+      "version": "4.0.1",
+      "url": "https://cran.r-project.org/src/contrib/fanplot_4.0.1.tar.gz",
+      "sha256": "04e78587b29e4817b382b0abbbcad1b7e7a30aa789cb308ff5e8e74d58c4b2dd",
+      "needsCompilation": false
+    },
+    {
+      "name": "MSGARCH",
+      "version": "2.51",
+      "url": "https://cran.r-project.org/src/contrib/MSGARCH_2.51.tar.gz",
+      "sha256": "b053e8a125a9fd0784aa496ea35021d2cfb3491210fb11554d3ca27b02481bd9",
+      "needsCompilation": true
+    }
+  ]
+}

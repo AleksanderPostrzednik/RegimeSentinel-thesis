@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "snapshot_id": "yahoo-btc-eth-daily-close-2021-07-20_2026-07-19",
+  "snapshot_path": "data/snapshots/btc-eth-daily-close-2021-07-20_2026-07-19.json",
+  "snapshot_file_sha256": "eecdf04ef85451ba1eae8ed8ad776ea5079b43156863d431d4ff38572493240d",
+  "snapshot_content_sha256": "1303b59d8059e1ba229dc3f2d353d1b66ca01d416e55e82531ef1fe7ab3a336b",
+  "instruments": [
+    "BTC-USD",
+    "ETH-USD"
+  ],
+  "timezone": "UTC",
+  "observed_start": "2021-07-20",
+  "observed_end": "2026-07-19",
+  "price_observations_per_instrument": 1826,
+  "log_return_observations_per_instrument": 1825
+}

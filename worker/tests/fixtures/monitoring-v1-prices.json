@@ -1,0 +1,8 @@
+{
+  "observedEndUtc": "2026-08-24",
+  "rowCount": 501,
+  "series": {
+    "BTC-USD": {"startPrice": 42000.0, "dailyLogDrift": 0.0007, "cycleAmplitude": 0.035, "cycleDays": 31},
+    "ETH-USD": {"startPrice": 2300.0, "dailyLogDrift": 0.0005, "cycleAmplitude": 0.045, "cycleDays": 27}
+  }
+}

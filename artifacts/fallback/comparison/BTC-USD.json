@@ -1,0 +1,434 @@
+{
+  "dimensions": {
+    "coverage_and_independence": {
+      "0.95": {
+        "baseline": {
+          "independence": {
+            "exceedances": 43,
+            "n_observations": 1068,
+            "p_value": 0.8362108639521031,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.04274251436481791,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "kupiec": {
+            "exceedances": 43,
+            "n_observations": 1068,
+            "p_value": 0.1312440951070932,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.2777269983913584,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          }
+        },
+        "regime": {
+          "independence": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.12389118880708135,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.36742588472066,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "kupiec": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.015765689090371602,
+            "reason": null,
+            "reject_at_5pct": true,
+            "statistic": 5.8288206673952345,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          }
+        }
+      },
+      "0.99": {
+        "baseline": {
+          "independence": {
+            "exceedances": 8,
+            "n_observations": 1068,
+            "p_value": 0.7280929281122341,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.12086989373530344,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "kupiec": {
+            "exceedances": 8,
+            "n_observations": 1068,
+            "p_value": 0.3884186919260807,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.7438866220497431,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          }
+        },
+        "regime": {
+          "independence": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.7551367153714065,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.0972650367598078,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "kupiec": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.11766812931924234,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.448087858757077,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          }
+        }
+      }
+    },
+    "fit_and_forecast_success_rate": {
+      "baseline": 0.8060377358490566,
+      "regime": 1.0
+    },
+    "joint_var_es_fz0": {
+      "0.95": {
+        "baseline": 1.7029900769742303,
+        "regime": 1.7106910866679503
+      },
+      "0.99": {
+        "baseline": 2.1642855409307296,
+        "regime": 2.1457412494264654
+      }
+    },
+    "observed_vs_expected_exceedances": {
+      "0.95": {
+        "baseline": {
+          "expected": 66.25000000000006,
+          "observed": 43
+        },
+        "regime": {
+          "expected": 66.25000000000006,
+          "observed": 48
+        }
+      },
+      "0.99": {
+        "baseline": {
+          "expected": 13.250000000000012,
+          "observed": 8
+        },
+        "regime": {
+          "expected": 13.250000000000012,
+          "observed": 8
+        }
+      }
+    },
+    "stability": {
+      "baseline": {
+        "fit_rows_with_parameters": 1068,
+        "forecast_path": "forecasts.json",
+        "max_relative_range": 5.52501990331447,
+        "parameter_count": 4,
+        "parameters": {
+          "alpha[1]": {
+            "max": 0.9219096323071522,
+            "mean": 0.1706559474104326,
+            "min": 0.0,
+            "n": 1068,
+            "range": 0.9219096323071522,
+            "relative_range": 5.402153551027039
+          },
+          "beta[1]": {
+            "max": 0.9999999999943637,
+            "mean": 0.7638891458978223,
+            "min": 0.05311118630006784,
+            "n": 1068,
+            "range": 0.9468888136942959,
+            "relative_range": 1.2395631208784732
+          },
+          "nu": {
+            "max": 4.822496151795361,
+            "mean": 3.4336404414825403,
+            "min": 2.344087727572894,
+            "n": 1068,
+            "range": 2.4784084242224673,
+            "relative_range": 0.7218019668804829
+          },
+          "omega": {
+            "max": 7.494255935595767,
+            "mean": 1.352103348114132,
+            "min": 0.02385802592705487,
+            "n": 1068,
+            "range": 7.470397909668712,
+            "relative_range": 5.52501990331447
+          }
+        }
+      },
+      "fallback_not_ms_garch": {
+        "fit_rows_with_parameters": 1325,
+        "forecast_path": "forecasts.json",
+        "max_relative_range": 1.8184655141790063,
+        "parameter_count": 4,
+        "parameters": {
+          "p[0->0]": {
+            "max": 0.9685010190881778,
+            "mean": 0.7421342060913432,
+            "min": 0.419415456894454,
+            "n": 1325,
+            "range": 0.5490855621937238,
+            "relative_range": 0.7398736747166474
+          },
+          "p[1->0]": {
+            "max": 0.6183099597807247,
+            "mean": 0.3676709773981938,
+            "min": 0.19417812152397865,
+            "n": 1325,
+            "range": 0.42413183825674605,
+            "relative_range": 1.1535635509174393
+          },
+          "sigma2[0]": {
+            "max": 4.317115310854645,
+            "mean": 1.8618505889648584,
+            "min": 0.9314042222681785,
+            "n": 1325,
+            "range": 3.3857110885864667,
+            "relative_range": 1.8184655141790063
+          },
+          "sigma2[1]": {
+            "max": 30.361436743809584,
+            "mean": 15.89416485399162,
+            "min": 8.493371429777842,
+            "n": 1325,
+            "range": 21.868065314031742,
+            "relative_range": 1.3758549451901432
+          }
+        }
+      }
+    },
+    "var_quantile_loss": {
+      "0.95": {
+        "baseline": 0.27673193759647263,
+        "regime": 0.278915020127851
+      },
+      "0.99": {
+        "baseline": 0.08721554306808407,
+        "regime": 0.08613118758904614
+      }
+    }
+  },
+  "instrument": "BTC-USD",
+  "models": {
+    "fallback_not_ms_garch": {
+      "engine": "python-statsmodels-markov-regression",
+      "fit_failure_count": 0,
+      "fit_success_count": 1325,
+      "fit_success_rate": 1.0,
+      "forecast_count": 1325,
+      "instrument": "BTC-USD",
+      "model_label": "fallback_not_ms_garch",
+      "risk": {
+        "0.95": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.016603806941987695,
+            "reason": null,
+            "reject_at_5pct": true,
+            "statistic": 8.196246552115895,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.12389118880708135,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.36742588472066,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.95,
+          "fit_success_rate": 1.0,
+          "kupiec": {
+            "exceedances": 48,
+            "n_observations": 1325,
+            "p_value": 0.015765689090371602,
+            "reason": null,
+            "reject_at_5pct": true,
+            "statistic": 5.8288206673952345,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 1.7106910866679503,
+          "mean_var_quantile_loss": 0.278915020127851,
+          "n_exceedances": 48,
+          "n_valid_forecasts": 1325
+        },
+        "0.99": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.28008099556777527,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.545352895516885,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.7551367153714065,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.0972650367598078,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.99,
+          "fit_success_rate": 1.0,
+          "kupiec": {
+            "exceedances": 8,
+            "n_observations": 1325,
+            "p_value": 0.11766812931924234,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.448087858757077,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 2.1457412494264654,
+          "mean_var_quantile_loss": 0.08613118758904614,
+          "n_exceedances": 8,
+          "n_valid_forecasts": 1325
+        }
+      }
+    },
+    "garch11-studentt": {
+      "fit_failure_count": 257,
+      "fit_success_count": 1068,
+      "fit_success_rate": 0.8060377358490566,
+      "forecast_count": 1325,
+      "innovation": "student_t",
+      "instrument": "BTC-USD",
+      "risk": {
+        "0.95": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 43,
+            "n_observations": 1068,
+            "p_value": 0.3134125966397236,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.3204695127561763,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 43,
+            "n_observations": 1068,
+            "p_value": 0.8362108639521031,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.04274251436481791,
+            "tail_probability": 0.050000000000000044,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.95,
+          "expected_exceedances_full_oos": 66.25000000000006,
+          "expected_exceedances_valid": 53.40000000000005,
+          "fit_success_rate": 0.8060377358490566,
+          "forecast_count": 1325,
+          "kupiec": {
+            "exceedances": 43,
+            "n_observations": 1068,
+            "p_value": 0.1312440951070932,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 2.2777269983913584,
+            "tail_probability": 0.050000000000000044,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 1.7029900769742303,
+          "mean_var_quantile_loss": 0.27673193759647263,
+          "n_exceedances": 43,
+          "n_valid_forecasts": 1068,
+          "observed_exceedance_rate": 0.040262172284644196,
+          "tail_probability": 0.050000000000000044
+        },
+        "0.99": {
+          "christoffersen_conditional_coverage": {
+            "exceedances": 8,
+            "n_observations": 1068,
+            "p_value": 0.6489638545527858,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.8647565157850465,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_conditional_coverage",
+            "valid": true
+          },
+          "christoffersen_independence": {
+            "exceedances": 8,
+            "n_observations": 1068,
+            "p_value": 0.7280929281122341,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.12086989373530344,
+            "tail_probability": 0.010000000000000009,
+            "test": "christoffersen_independence",
+            "valid": true
+          },
+          "confidence": 0.99,
+          "expected_exceedances_full_oos": 13.250000000000012,
+          "expected_exceedances_valid": 10.68000000000001,
+          "fit_success_rate": 0.8060377358490566,
+          "forecast_count": 1325,
+          "kupiec": {
+            "exceedances": 8,
+            "n_observations": 1068,
+            "p_value": 0.3884186919260807,
+            "reason": null,
+            "reject_at_5pct": false,
+            "statistic": 0.7438866220497431,
+            "tail_probability": 0.010000000000000009,
+            "test": "kupiec_unconditional_coverage",
+            "valid": true
+          },
+          "mean_fz0_score": 2.1642855409307296,
+          "mean_var_quantile_loss": 0.08721554306808407,
+          "n_exceedances": 8,
+          "n_valid_forecasts": 1068,
+          "observed_exceedance_rate": 0.00749063670411985,
+          "tail_probability": 0.010000000000000009
+        }
+      }
+    }
+  },
+  "oos_model_selection_used": false,
+  "selection_rule": "feasibility_and_stability_only; never OOS performance"
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://regimesentinel.local/contracts/monitoring-protocol.v1.schema.json",
+  "title": "RegimeSentinel monitoring-v1 protocol",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["$schema", "protocolId", "mode", "description", "schedule", "data", "estimation", "risk", "history", "publication"],
+  "properties": {
+    "$schema": {"const": "../contracts/monitoring-protocol.v1.schema.json"},
+    "protocolId": {"const": "monitoring-v1"},
+    "mode": {"const": "operational"},
+    "description": {"type": "string", "minLength": 1},
+    "schedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["frequency", "timezone", "cron", "completeDayLag"],
+      "properties": {
+        "frequency": {"const": "daily"},
+        "timezone": {"const": "UTC"},
+        "cron": {"type": "string", "minLength": 1},
+        "completeDayLag": {"const": 1}
+      }
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "accessMethod", "instruments", "frequency", "timezone", "priceField", "historyCalendarDays", "minimumPriceRows", "validation", "freshness"],
+      "properties": {
+        "provider": {"const": "Yahoo Finance"},
+        "accessMethod": {"const": "yfinance 0.2.65"},
+        "instruments": {"const": ["BTC-USD", "ETH-USD"]},
+        "frequency": {"const": "1d"},
+        "timezone": {"const": "UTC"},
+        "priceField": {"const": "unadjusted_close"},
+        "historyCalendarDays": {"type": "integer", "minimum": 500},
+        "minimumPriceRows": {"type": "integer", "minimum": 501},
+        "validation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sharedDatesRequired", "contiguousDailyDatesRequired", "duplicatesAllowed", "missingValuesAllowed", "nonPositivePricesAllowed"],
+          "properties": {
+            "sharedDatesRequired": {"const": true},
+            "contiguousDailyDatesRequired": {"const": true},
+            "duplicatesAllowed": {"const": false},
+            "missingValuesAllowed": {"const": false},
+            "nonPositivePricesAllowed": {"const": false}
+          }
+        },
+        "freshness": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["maximumAgeHoursAfterObservationClose"],
+          "properties": {
+            "maximumAgeHoursAfterObservationClose": {
+              "type": "integer",
+              "minimum": 24,
+              "description": "Maximum result age measured from the end of the observed UTC day."
+            }
+          }
+        }
+      }
+    },
+    "estimation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["returnScale", "windowReturns", "baseline", "regime"],
+      "properties": {
+        "returnScale": {"const": 100},
+        "windowReturns": {"const": 500},
+        "baseline": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["order", "variants", "primaryModelId"],
+          "properties": {
+            "order": {"const": [1, 1]},
+            "variants": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["modelId", "innovation"],
+                "properties": {
+                  "modelId": {"enum": ["garch11-studentt", "garch11-normal"]},
+                  "innovation": {"enum": ["student_t", "normal"]}
+                }
+              }
+            },
+            "primaryModelId": {"const": "garch11-studentt"}
+          }
+        },
+        "regime": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["modelId", "states", "probabilityType", "modelLabel", "trueMsgarchAttempted"],
+          "properties": {
+            "modelId": {"const": "markov-variance-2state"},
+            "states": {"const": 2},
+            "probabilityType": {"const": "filtered"},
+            "modelLabel": {"const": "fallback_not_ms_garch"},
+            "trueMsgarchAttempted": {"const": false}
+          }
+        }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["horizonDays", "confidenceLevels"],
+      "properties": {
+        "horizonDays": {"const": 1},
+        "confidenceLevels": {"const": [0.95, 0.99]}
+      }
+    },
+    "history": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["maximumPoints", "rangesDays", "returnDefinition", "returnUnit", "realizedVolatilityWindowsDays", "realizedVolatilityEstimator", "annualized"],
+      "properties": {
+        "maximumPoints": {"const": 180},
+        "rangesDays": {"const": [30, 90, 180]},
+        "returnDefinition": {"const": "log"},
+        "returnUnit": {"const": "percent_return"},
+        "realizedVolatilityWindowsDays": {"const": [7, 30]},
+        "realizedVolatilityEstimator": {"const": "population_standard_deviation"},
+        "annualized": {"const": false}
+      }
+    },
+    "publication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resultContract", "staticPath", "historyContract", "historyStaticPath", "atomic", "preservePreviousOnFailure"],
+      "properties": {
+        "resultContract": {"const": "monitoring-result.v1"},
+        "staticPath": {"const": "api/v1/monitoring/latest.json"},
+        "historyContract": {"const": "monitoring-history.v1"},
+        "historyStaticPath": {"const": "api/v1/monitoring/history.json"},
+        "atomic": {"const": true},
+        "preservePreviousOnFailure": {"const": true}
+      }
+    }
+  }
+}

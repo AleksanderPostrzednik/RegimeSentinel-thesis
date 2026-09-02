@@ -1,0 +1,3778 @@
+[
+  {
+    "error": "fit violated GARCH constraints: omega=0.2730607360439793, alpha=0.08839798183736228, beta=0.9116020181626378",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-01-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 536
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2880145644315095, alpha=0.08935936532492185, beta=0.9106406346750783",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-01-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 537
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.31257777381896185, alpha=0.09144828144251813, beta=0.9085517185574818",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-01-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 538
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2949789921156311, alpha=0.08969258597825124, beta=0.9103074140217489",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-01-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 539
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.2826245372114935, alpha=0.18347769425939744, beta=0.8165223057406027",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 671
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.2183391739315261, alpha=0.18180189552800982, beta=0.8181981044719902",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 672
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.1501919002893055, alpha=0.17746967132928881, beta=0.8225303286707112",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 676
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.377516167640438, alpha=0.18467295702308056, beta=0.8153270429769195",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 677
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.322671062414548, alpha=0.1802888027228404, beta=0.8197111972771596",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 678
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.1797884944258286, alpha=0.17315767318017716, beta=0.8268423268198228",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-05-31",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 679
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.15478174114493, alpha=0.1808602518589643, beta=0.8191397481410357",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 686
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.282007099917255, alpha=0.18806156059202755, beta=0.8119384394079725",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 687
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.2643597529403998, alpha=0.18308651124720235, beta=0.8169134887527978",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 688
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.2300279224663135, alpha=0.1788129742097497, beta=0.8211870257902503",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 689
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.1280414018096172, alpha=0.17583775212996933, beta=0.8241622478700307",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 691
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=1.0842157798108032, alpha=0.17364574778558695, beta=0.8263542522144132",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-06-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 693
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.9326099202594769, alpha=0.20568033989976064, beta=0.7943196601002395",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 741
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.9238477109152808, alpha=0.20585332373494136, beta=0.7941466762650586",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 742
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.9684358378807603, alpha=0.20682247373424592, beta=0.7931775262657541",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 743
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.8720642557894649, alpha=0.20275929564106807, beta=0.7972407043589319",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 744
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.8634572218583005, alpha=0.19921878714137436, beta=0.8007812128586257",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 745
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.8054513871930186, alpha=0.19527115614827864, beta=0.8047288438517214",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 746
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.790050985786024, alpha=0.19222910059282153, beta=0.8077708994071786",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 747
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.7317705154271297, alpha=0.1892713467451439, beta=0.8107286532548562",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 748
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.7554494038233853, alpha=0.1939388452121498, beta=0.8060611547878502",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 749
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.8489200440955998, alpha=0.2045501160008001, beta=0.7954498839992",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 750
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.7673786340365388, alpha=0.19783590567308046, beta=0.8021640943269195",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 751
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.683269626767126, alpha=0.1909120389414928, beta=0.8090879610585072",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 752
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.6014011120688981, alpha=0.18407510719913509, beta=0.8159248928008651",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 753
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.586227687773467, alpha=0.1811494867810738, beta=0.8188505132189262",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 754
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5421733851027778, alpha=0.17558648554713213, beta=0.8244135144528679",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 755
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.48870404757120445, alpha=0.1703390719162531, beta=0.8296609280837469",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 756
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5097494274054591, alpha=0.17278616890546478, beta=0.8272138310945353",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 757
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.6833204524337991, alpha=0.18733810540348775, beta=0.8126618945965124",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 760
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.6317240813113469, alpha=0.18037239817184234, beta=0.8196276018281587",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 761
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5864041313671955, alpha=0.1701244588107952, beta=0.8298755411892056",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 763
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5727304539206314, alpha=0.1702606985065615, beta=0.8297393014934391",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 764
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5665151203581069, alpha=0.16184592853185595, beta=0.838154071468168",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-31",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 771
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.670441214773895, alpha=0.1767780197941221, beta=0.8232219802058798",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 772
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5966147530271614, alpha=0.16185826654622326, beta=0.8381417334537863",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 773
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5009090326574596, alpha=0.14732467913647668, beta=0.852675320863524",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 774
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.34947882309435213, alpha=0.11981260724297901, beta=0.8801873927570245",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 777
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.30986532498176206, alpha=0.11398159442906301, beta=0.8860184055709518",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 778
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.30913370206095453, alpha=0.11269321086483247, beta=0.8873067891351729",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 779
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3396539749290821, alpha=0.11751890617202115, beta=0.8824810938279825",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 780
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.30404898825297416, alpha=0.10716502004739044, beta=0.8928349799526152",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 783
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3038283937580427, alpha=0.10557501540565574, beta=0.8944249845943454",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 784
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.27200625843595877, alpha=0.10103381234228431, beta=0.8989661876577215",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 786
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2548301059720066, alpha=0.0961277199392424, beta=0.9038722800607587",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 788
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.27346829145131846, alpha=0.10184344503268078, beta=0.8981565549673199",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 790
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.26928824178217764, alpha=0.10092788130724549, beta=0.8990721186927547",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 791
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3906413733529228, alpha=0.12797113370466778, beta=0.8720288662953416",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 794
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.48669575809107246, alpha=0.1455999912682689, beta=0.8544000087317427",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 795
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.43336826284025787, alpha=0.13907174952827683, beta=0.8609282504717976",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 796
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3856440511006872, alpha=0.1340800033865408, beta=0.8659199966135879",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 797
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3703469501667214, alpha=0.1314472012376979, beta=0.8685527987623094",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 798
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.38978650570640533, alpha=0.127988091254884, beta=0.872011908745116",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 801
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.4678320093913199, alpha=0.131399184143452, beta=0.8686008158565712",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 805
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5441428170160062, alpha=0.13684331441337885, beta=0.8631566855869296",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 807
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.38015499240945255, alpha=0.1144840956338874, beta=0.88551590436612",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 810
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3435010765689707, alpha=0.10994903325652086, beta=0.8900509667434793",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 812
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.35676643578740597, alpha=0.11216594709200896, beta=0.8878340530210819",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 815
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.4415371929031181, alpha=0.11761006903310932, beta=0.8823899309669432",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 818
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3247876106948199, alpha=0.10138235844118813, beta=0.8986176415588198",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 820
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.4166080556850995, alpha=0.11511077053617612, beta=0.884889229464243",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 823
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.39451783020853187, alpha=0.11414306014753668, beta=0.8858569398524634",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 824
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5239294230445105, alpha=0.13066280720035522, beta=0.8693371927996447",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 825
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5803669741793147, alpha=0.141910928016966, beta=0.858089071983034",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 826
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.593868056445228, alpha=0.1387038201706878, beta=0.8612961798293122",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 827
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.6214575017624496, alpha=0.1466107339574984, beta=0.8533892660425016",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 828
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5868128967587203, alpha=0.14166790954272812, beta=0.8583320904572719",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-10-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 830
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.1955591604232945, alpha=0.8883211650920565, beta=0.11167883490794359",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 849
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.108060881369159, alpha=0.8872189483499477, beta=0.11278105165005223",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 850
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.140887946280036, alpha=0.913870665095751, beta=0.086129334904249",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 851
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.293643207655647, alpha=0.9037592797084399, beta=0.09624072029156007",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 852
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.125639939504845, alpha=0.8875277919032789, beta=0.11247220809672114",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 853
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.031422219684535, alpha=0.8956296379531463, beta=0.10437036204685367",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 854
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.042373507984132, alpha=0.9030828660691133, beta=0.09691713393088672",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 855
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.873765515909142, alpha=0.8953214888714578, beta=0.10467851112854229",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 859
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.718927783669479, alpha=0.8912435276164001, beta=0.10875647238359998",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 860
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.612908804041934, alpha=0.8885064593728563, beta=0.1114935406271437",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 861
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.506068170639525, alpha=0.89623379349734, beta=0.10376620650266002",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-11-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 862
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.396713867252925, alpha=0.8762898383118649, beta=0.12371016168813516",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 863
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.6007605970394385, alpha=0.8664015721507669, beta=0.13359842784923326",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 864
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.195256870100326, alpha=0.8673199282721764, beta=0.13268007172782353",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 868
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.8325573025708755, alpha=0.924298227995918, beta=0.0757017720040821",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 973
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=6.385121536092847, alpha=0.9169610778803367, beta=0.0830389221196634",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 974
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.19651750436803442, alpha=0.07943543778583577, beta=0.9205645622141643",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 988
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1818138010241404, alpha=0.07450360668399222, beta=0.9254963933160079",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 989
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.24349306260347656, alpha=0.08562205583316367, beta=0.9143779441668364",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 990
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5048459053414269, alpha=0.13035533499758886, beta=0.8696446650024111",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 991
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.36254837850978666, alpha=0.1087397109923674, beta=0.8912602890076328",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 993
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.17193034135007973, alpha=0.07096989963047, beta=0.9290301003695334",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 994
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.17289410162415692, alpha=0.07163328322956815, beta=0.9283667167704318",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 996
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.13727972668224306, alpha=0.06265259647667215, beta=0.9373474035233278",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 998
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.13854293307091728, alpha=0.06228426476076883, beta=0.9377157352392316",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 999
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.12051436873159976, alpha=0.05971763276369002, beta=0.9402823672363299",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1000
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.12262365138780253, alpha=0.0594625730475162, beta=0.9405374269524838",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1002
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.11895889860652384, alpha=0.05862180879175552, beta=0.9413781912083012",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1003
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.12833607744553022, alpha=0.06013487803995782, beta=0.9398651219600432",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1005
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1528434771539661, alpha=0.06372655325751594, beta=0.9362734467452055",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1006
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.14455402537791312, alpha=0.06210549533372551, beta=0.9378945367194729",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1007
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1448249362206304, alpha=0.06333019314382322, beta=0.9366698069577313",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1008
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1306776034989852, alpha=0.06249456630196516, beta=0.9375054336980349",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1010
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.14682151016849246, alpha=0.06631272720765032, beta=0.9336872727923498",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1012
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.17048288648123422, alpha=0.07101667357519872, beta=0.9289833264248013",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1014
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.15216286215852515, alpha=0.0652651627148252, beta=0.9347348372877617",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1015
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1413552763815573, alpha=0.06330232482079308, beta=0.9366976751792071",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1016
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.15793616496514734, alpha=0.06512989608771741, beta=0.9348701039127862",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1017
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.17127182156650814, alpha=0.06631916708428019, beta=0.9336808329166987",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1018
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1842299035217598, alpha=0.06732961512954308, beta=0.9326703864274066",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1019
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.19292579287639477, alpha=0.06854967705899681, beta=0.9314503229946022",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1022
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.16385161975956225, alpha=0.06412596275540083, beta=0.9358741891939829",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1024
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.16596332694307592, alpha=0.06322920780008118, beta=0.9367707922000134",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1025
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.18967842611342578, alpha=0.06580862971475365, beta=0.9341913702859106",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1026
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.041951457766218316, alpha=0.038096340634808164, beta=0.9619036595307218",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1036
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03655835083203539, alpha=0.03763075494982481, beta=0.9623692742431437",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1038
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03702784541515011, alpha=0.03786344516378854, beta=0.9621365551778182",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1039
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05392143798059279, alpha=0.04175157534761877, beta=0.9582484246523831",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1044
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05358143552065128, alpha=0.0418081234926139, beta=0.9581918765073861",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-31",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1045
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04923987294793015, alpha=0.04121354469588877, beta=0.9587864553041113",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1046
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.055924050675621485, alpha=0.04255110146205873, beta=0.9574488985384584",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1047
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.10013921935649801, alpha=0.055466105851438505, beta=0.9445338941485616",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1049
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07222686145718726, alpha=0.04999572870448674, beta=0.9500042712955133",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1051
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0634163868218518, alpha=0.047929761470633, beta=0.9520702385293673",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1053
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07058941613014756, alpha=0.04990738443660373, beta=0.9500926155634163",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1054
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06664553267306673, alpha=0.0510800704230703, beta=0.9489199295769297",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1056
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05914692958193947, alpha=0.04782569007530215, beta=0.9521743099246979",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1058
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06314688423900564, alpha=0.04809212557386325, beta=0.9519078744261369",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1059
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06019686262535419, alpha=0.04752468182941779, beta=0.9524753181705823",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1060
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06847965821117996, alpha=0.04972202584527829, beta=0.9502780945782124",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1061
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07004946778270303, alpha=0.0505720705012126, beta=0.9494279295177195",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1062
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0674929407240154, alpha=0.05099472939142044, beta=0.9490052706085802",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1063
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05854665672599445, alpha=0.04814739573505546, beta=0.9518526042649446",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1064
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06248227013406921, alpha=0.049496719081206245, beta=0.9505032809187938",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1065
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06330789841104172, alpha=0.05056458978238262, beta=0.9494354102176173",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1066
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06732490566267167, alpha=0.05214095705333774, beta=0.9478592712045523",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1068
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05993640882648859, alpha=0.04651908517501666, beta=0.9534809148250477",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1071
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.055111194737939996, alpha=0.045577578638566096, beta=0.9544237580847356",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1072
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05075280772855392, alpha=0.047221176341816634, beta=0.9527788236584879",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1075
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.052946006375836525, alpha=0.046545024614890525, beta=0.9534549755996664",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1076
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06280656700293771, alpha=0.049175283227351665, beta=0.9508247167843253",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1077
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05518957628171749, alpha=0.0475752004207891, beta=0.952424799579211",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1078
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05251426309068645, alpha=0.04584464540532814, beta=0.9541553545947301",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1079
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05644539159619262, alpha=0.04527539178297503, beta=0.9547246082173501",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1080
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05373346670715981, alpha=0.04424316452868179, beta=0.955756835631785",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1082
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05973266614236646, alpha=0.04511931250437556, beta=0.954880687521301",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1084
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.054524397383989905, alpha=0.04433284795477237, beta=0.9556671520475986",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1085
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.053679224065910774, alpha=0.044041217400809025, beta=0.955958782599196",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1086
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05163891246278323, alpha=0.043968257277718865, beta=0.956031742722292",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1088
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05214761248828524, alpha=0.04471568405808156, beta=0.9552843159419184",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1090
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05702882443734443, alpha=0.045330292179416344, beta=0.9546697103467257",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1093
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06255330575604764, alpha=0.04841670547108393, beta=0.9515832945289161",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1095
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05760974643886306, alpha=0.04480627462962233, beta=0.9551937253703777",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1097
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05997077285499265, alpha=0.04609571008000359, beta=0.9539042899199965",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1098
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0650787077433409, alpha=0.04810838963902847, beta=0.9518916103609716",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1099
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.054388248978255394, alpha=0.043795733776581386, beta=0.9562042662242327",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1100
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036544341265192376, alpha=0.03772135203052367, beta=0.9622786479695075",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1102
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.042197393455827924, alpha=0.03914030412005933, beta=0.960859695880297",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1104
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0352381326037719, alpha=0.03458985467977802, beta=0.9654101456874209",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1110
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04364472370464944, alpha=0.03686328071186272, beta=0.9631369584676215",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1111
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.061216704143334154, alpha=0.0434624114778764, beta=0.956537588522165",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1114
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.11431663690726605, alpha=0.058522025765889815, beta=0.9414779745024874",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1115
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.11999984946511505, alpha=0.05813843889754439, beta=0.941861561917242",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1117
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.10703139519531749, alpha=0.05453390611629398, beta=0.9454660947073563",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1120
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.10453970624388098, alpha=0.05437668464331058, beta=0.945623315356691",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1122
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.09910864074908732, alpha=0.05278376010799008, beta=0.9472162403113447",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1123
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06467640982943329, alpha=0.04386445024638901, beta=0.9561355499293371",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1125
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05515155397353082, alpha=0.04130647859761702, beta=0.9586935312863296",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1126
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04808781148179959, alpha=0.03949550674216961, beta=0.9605044932578304",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1127
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02161049123710069, alpha=1.560788515348927e-09, beta=0.9999999993972278",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1128
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05665821913597695, alpha=0.04209007288647991, beta=0.9579099271135202",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1129
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.052846068291267104, alpha=0.041027168888309096, beta=0.9589728311117739",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1131
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04878933914040882, alpha=0.03980658743743151, beta=0.960193412811422",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1132
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04441618124374225, alpha=0.03963965170858721, beta=0.9603605393028241",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1133
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04425396162014191, alpha=0.036047537933723006, beta=0.9639524738911944",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1139
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04903935682500016, alpha=0.036545563949903895, beta=0.9634544379676222",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1140
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05123725844925482, alpha=0.0371269719589523, beta=0.9628730286831003",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1141
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04940846755481015, alpha=0.03658050689742358, beta=0.9634194980909221",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1142
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.023064743791323155, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1143
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.046607627304166045, alpha=0.03611172418152368, beta=0.963888797673315",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1144
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.043181070961294726, alpha=0.03559661788760096, beta=0.9644040992558612",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1145
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0533860822664934, alpha=0.03787219822542363, beta=0.9621283511462001",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1146
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04451241851066039, alpha=0.035416225891984204, beta=0.9645837777061368",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1147
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03964231787811288, alpha=0.035458595426610846, beta=0.9645414248580493",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1149
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04119049977213476, alpha=0.033988641564988875, beta=0.9660113647748004",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1150
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.038392225788634195, alpha=0.03321732694192484, beta=0.9667828060811374",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1153
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04121520854260198, alpha=0.03206265866477991, beta=0.9679373436033245",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1155
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.042775708920430665, alpha=0.03204514269230083, beta=0.9679548607633653",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1156
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.049290907537417016, alpha=0.0342164065892176, beta=0.965783594253652",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1158
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06632179073782488, alpha=0.040554004179001964, beta=0.959445995882207",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1160
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.060999086411192546, alpha=0.04057341484631879, beta=0.9594265854529427",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1162
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02535094330874816, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1163
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02575874819992743, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1164
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06002075963930189, alpha=0.042425006077359675, beta=0.9575749942100817",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1167
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04888644049667681, alpha=0.038618457993526964, beta=0.9613815866014084",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1168
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.029509183382074873, alpha=5.686250738434854e-14, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-02",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1169
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.030704735679359905, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1171
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03251704596094079, alpha=2.5543661979486998e-09, beta=0.99999999872516",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-05",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1172
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05415398400305312, alpha=0.04080337527841597, beta=0.9591966260006755",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-06",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1173
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.032957860221315985, alpha=2.3827117768662375e-08, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1175
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05088654910055265, alpha=0.041639385580990305, beta=0.9583606149551056",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1177
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05267762792882717, alpha=0.043023397215764245, beta=0.9569766225844554",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-12",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1179
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.056733717797519644, alpha=0.04415213707616343, beta=0.9558478629569388",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1180
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04484152966050653, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1182
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06659155721175508, alpha=0.04699157795080278, beta=0.9530084277749673",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1183
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06939368509470396, alpha=0.049719875780959336, beta=0.9502801364878555",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1184
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05342552476553258, alpha=0.041424602021987555, beta=0.9585754012637455",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1185
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03698511350910183, alpha=0.030987189980246136, beta=0.9690128200905112",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1186
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03785515744134823, alpha=0.0306634361040973, beta=0.9693365651323672",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-21",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1188
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03683197791316835, alpha=0.031198407350616134, beta=0.9688015940286511",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1189
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03962047139540016, alpha=0.03094194057048706, beta=0.96905806066445",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1190
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03976602243533069, alpha=0.03284821972010044, beta=0.9671519612321361",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1191
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03954175652903319, alpha=0.03364169520395004, beta=0.966358341657173",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1192
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.040016235377449964, alpha=0.03495576158929678, beta=0.9650444148692235",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1193
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.041948056728324946, alpha=0.03371645712555571, beta=0.9662835635470323",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1195
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.043047837938353255, alpha=0.03048390995209207, beta=0.9695160946874318",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1197
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0466192756772144, alpha=0.033246689362426064, beta=0.9667533110515013",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-31",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1198
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.050018241266441305, alpha=0.03279426847243278, beta=0.9672057316650449",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1199
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.029452625115519993, alpha=0.01485018441752831, beta=0.985149820756446",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-03",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1201
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.028787008862008405, alpha=0.015884999741655526, beta=0.9841150044062834",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1202
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03373701777612862, alpha=0.012317955176100025, beta=0.9876820448339314",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1206
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0392693825338153, alpha=0.012143856633284584, beta=0.9878561433667772",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1208
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.041847363464743305, alpha=0.01046701020274261, beta=0.9895329897972575",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1209
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04137559754568534, alpha=0.009238687933799295, beta=0.99076131209417",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-13",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1211
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.038980957530464835, alpha=0.009593731221358771, beta=0.9904062692905042",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1212
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04227530903376156, alpha=0.008088474687200914, beta=0.9919115293084758",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-15",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1213
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.045284391273843545, alpha=0.006820235012887039, beta=0.9931797825716382",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-16",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1214
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.049242969655045835, alpha=0.006652165584767078, beta=0.9933478349825972",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-17",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1215
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05490905965812233, alpha=0.006656701930512621, beta=0.9933433007496251",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1216
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06400716899236086, alpha=0.006394726879965742, beta=0.9936056006158798",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1217
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.061302347279821465, alpha=0.006621298337389621, beta=0.9933787016626145",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-20",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1218
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06112677903525536, alpha=0.006086468589112124, beta=0.9939135314109522",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-22",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1220
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06099499337901782, alpha=0.006479271140616049, beta=0.9935207288611037",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1221
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0683744664314478, alpha=0.006177147325749343, beta=0.9938228526766474",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1222
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07379830468459694, alpha=0.0069941473811015635, beta=0.9930058619113844",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1223
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06269174046279037, alpha=0.008597349092147738, beta=0.9914026509078523",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-26",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1224
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06138161975472476, alpha=0.008880972158407394, beta=0.9911190278415927",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1225
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.058305634139757034, alpha=0.008666285493077776, beta=0.9913337145069223",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1226
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.060353479174876205, alpha=0.008877163072421524, beta=0.9911228369275785",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1227
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07040048103175521, alpha=0.008411109323931045, beta=0.9915888906761827",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-30",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1228
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06488973259986071, alpha=0.008957372019937177, beta=0.9910426280557485",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-01",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1229
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0670774442741425, alpha=0.009700538816573397, beta=0.9902994611834923",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-04",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1232
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06644502026079668, alpha=0.010318380213467706, beta=0.989681619839142",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-07",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1235
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06389313931683652, alpha=0.010932994621610922, beta=0.9890670053784689",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-08",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1236
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06696307785978682, alpha=0.01103911794679401, beta=0.988960882053364",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-09",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1237
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06227393283262031, alpha=0.010609925860494605, beta=0.9893900741410503",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-10",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1238
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05918085702699671, alpha=0.011100471686937698, beta=0.9888995283131106",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-11",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1239
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06076609095288992, alpha=0.010633277539959567, beta=0.9893667224610471",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-14",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1242
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06524574804152632, alpha=0.011476868469878363, beta=0.9885231315301218",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-18",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1246
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06402454513220154, alpha=0.010233424491345452, beta=0.9897665755086641",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-19",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1247
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0802914443826429, alpha=0.009630156561018908, beta=0.9903698434397376",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-23",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1251
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07737290866954559, alpha=0.010145027976539768, beta=0.9898549720234602",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-24",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1252
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06983503897185052, alpha=0.00971120127367214, beta=0.9902887987263388",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-25",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1253
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06826105978278015, alpha=0.009557726342875186, beta=0.9904422736571249",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-27",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1255
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07241637085557272, alpha=0.009141482760816753, beta=0.9908585172391833",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-28",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1256
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0899693827078329, alpha=0.008840797651349475, beta=0.9911592023486506",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-12-29",
+    "innovation": "student_t",
+    "instrument": "BTC-USD",
+    "origin_index": 1257
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.6205182727319805, alpha=0.1702337780272645, beta=0.8297662219727356",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 745
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5727869331529041, alpha=0.1657295891745222, beta=0.8342704108254778",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 746
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.5309775113738257, alpha=0.1612845521225469, beta=0.8387154478774531",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 747
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.459621479571157, alpha=0.15643240961871513, beta=0.8435675903812849",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 748
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.4734159682109686, alpha=0.15867883841322156, beta=0.8413211615867785",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 749
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.45413588578872827, alpha=0.15579898035849823, beta=0.8442010196415017",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 750
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.39153811411467243, alpha=0.14924368827629195, beta=0.850756311723708",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 751
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.24075079478709596, alpha=0.133038148783619, beta=0.866961851216381",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 754
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.19406995826266304, alpha=0.12755990391655309, beta=0.8724400960835309",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 757
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3540088389130302, alpha=0.14230880033067794, beta=0.8576911996693223",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 760
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3284805423600986, alpha=0.1370073722178027, beta=0.8629926277821973",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 761
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3026603526007574, alpha=0.13291636658254485, beta=0.8670836334174552",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 763
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3287501736219974, alpha=0.13932603769430138, beta=0.8606739623056986",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 764
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3630863718603357, alpha=0.14709215460617886, beta=0.8529078453938213",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 765
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.33221016254792174, alpha=0.1409747860601074, beta=0.8590252139398926",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 766
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3106203818126899, alpha=0.13580497818166543, beta=0.8641950218183346",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 767
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.24038891814383984, alpha=0.11584887254323431, beta=0.8841511274567753",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-08-31",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 771
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2561765815548646, alpha=0.1183234056709526, beta=0.8816765943290505",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 772
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2147682964356641, alpha=0.10881648559949018, beta=0.8911835144005125",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 773
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.17230958972453314, alpha=0.099091719070161, beta=0.9009082809298435",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 774
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1386725223409141, alpha=0.0898455878484641, beta=0.910154412151592",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-09-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 775
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.23720840351017797, alpha=0.08398128622552072, beta=0.9160187137744793",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 872
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2799463136806632, alpha=0.08969898006600828, beta=0.9103010199339918",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 873
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.248814388979438, alpha=0.08431739574316519, beta=0.9156826042568348",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-12",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 874
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.22671636063111125, alpha=0.07927427040867634, beta=0.9207257295913237",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 875
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2054378944256449, alpha=0.07637715334436829, beta=0.9236228466556318",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 876
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.20655646171742045, alpha=0.07584655235365652, beta=0.9241534476463436",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-15",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 877
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2196379160778913, alpha=0.07801804167877188, beta=0.9219819583212281",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 886
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.22252720397908882, alpha=0.07675238152438231, beta=0.9232476184756178",
+    "error_type": "GarchFitError",
+    "forecast_date": "2023-12-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 888
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2648530954718009, alpha=0.09175851231533819, beta=0.9082414876846618",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-01-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 895
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2591051614287324, alpha=0.08944795671249439, beta=0.9105520432875057",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-01-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 896
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.25151404619362233, alpha=0.08785101539332309, beta=0.9121489846066769",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-01-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 898
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.2314308641980191, alpha=0.08200725915119163, beta=0.9179927408488084",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-01-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 899
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.41417284384155245, alpha=0.09958595942908889, beta=0.9004140405709111",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-16",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 940
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.4396267630884359, alpha=0.09900904027646136, beta=0.9009909597235386",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 941
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3969913499539344, alpha=0.09419487212213597, beta=0.9058051278778642",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 942
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.35236374118072256, alpha=0.09009551649107397, beta=0.909904483508926",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 943
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.334344795021736, alpha=0.0872996094377492, beta=0.9127003905622508",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 944
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.3095175996015886, alpha=0.08370477709153802, beta=0.916295222908462",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 945
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0766372698216079, alpha=0.03389156513901417, beta=0.9661084348609859",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-22",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 946
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07924080595198552, alpha=0.03345119043292867, beta=0.9665488095670713",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 947
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07559602093904508, alpha=0.03274534974732637, beta=0.9672546502526737",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-02-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 948
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.12653965513326926, alpha=0.05592357084897539, beta=0.9440764291510247",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 977
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04546255428234768, alpha=0.0409550882339818, beta=0.9590449117661609",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 978
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04333845013168158, alpha=0.040946689186350686, beta=0.959053310813681",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 979
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.043737887154461225, alpha=0.03967066255166495, beta=0.9603293374483461",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 980
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04641201924479528, alpha=0.04016402627173399, beta=0.959835973728266",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 981
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03977900347513278, alpha=0.03763669666657851, beta=0.9623633033334673",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-03-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 983
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.039732970153396434, alpha=0.03989281026824617, beta=0.9601071897318165",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 987
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.038279698865719906, alpha=0.03850168368456052, beta=0.9614983163155181",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 988
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04072266917278864, alpha=0.03815819552922359, beta=0.9618418044708951",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 989
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04209644046204798, alpha=0.03784553637126941, beta=0.962154463628734",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 990
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.045925805059385004, alpha=0.038254906279044154, beta=0.961745093720964",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 992
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04248739151508255, alpha=0.038155533619293525, beta=0.9618444663807263",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 993
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.039328373890978714, alpha=0.03832712672858119, beta=0.961672873271452",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 995
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.040811610466713964, alpha=0.03823473380121271, beta=0.961765266199327",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-12",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 996
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.051131854426726395, alpha=0.042660454898987364, beta=0.9573395451288164",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 998
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05091583302311387, alpha=0.04333775691228425, beta=0.9566622430889398",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-15",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 999
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05709007155287258, alpha=0.043579916440529956, beta=0.9564200835596216",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1002
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05718890342608728, alpha=0.04341841201965586, beta=0.9565815879811526",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1003
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05514677616419322, alpha=0.042746534385948554, beta=0.9572534656142978",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1004
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05950543343130009, alpha=0.043356973939702864, beta=0.9566430260603265",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1005
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07137099785962316, alpha=0.044872796327291596, beta=0.9551272036727085",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1007
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.14402166760837237, alpha=0.06765659632700174, beta=0.9323434036729984",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-04-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1014
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.13046422661096016, alpha=0.06258058919801715, beta=0.9374194108019829",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1015
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1237416347394184, alpha=0.06168943204136938, beta=0.9383105679586307",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1016
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1382131785985577, alpha=0.06385137228012613, beta=0.9361486277198738",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1017
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.18448589811600036, alpha=0.0737800520114987, beta=0.9262199479885014",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1018
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.18941591669847943, alpha=0.07438276096841137, beta=0.9256172390315887",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1019
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.18810380700802404, alpha=0.07455358495495107, beta=0.925446415045049",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1020
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.1618759217863264, alpha=0.07032949437094109, beta=0.929670505629059",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1021
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.13958161080741532, alpha=0.06655348230166862, beta=0.9334465176983314",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1022
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.12642581583625317, alpha=0.06443121405279569, beta=0.9355687859472043",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1023
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.10055512971714121, alpha=0.0574047744378729, beta=0.942595225562127",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-12",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1026
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0941510205905106, alpha=0.05636525624378914, beta=0.9436347437562108",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1027
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.08478846181143623, alpha=0.05481890757270113, beta=0.9451810924272989",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1028
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04637926314165849, alpha=0.04339247246766232, beta=0.9566075275323445",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-16",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1030
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03881204308127752, alpha=0.04105235300800934, beta=0.9589476469919932",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1031
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03114262367607716, alpha=0.03827716071391041, beta=0.9617228392878862",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1032
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03576610700346687, alpha=0.03965141111075634, beta=0.9603485888892566",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1033
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03204529632375782, alpha=0.03868162518079072, beta=0.9613183748192226",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1034
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036911833056359075, alpha=0.0373781117110762, beta=0.9626218882889241",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1035
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03195656708898391, alpha=0.03562869733217916, beta=0.9643713026678212",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1037
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03230401470409127, alpha=0.03493965104507558, beta=0.9650603489549244",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1038
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.030404065119013897, alpha=0.034214516489927814, beta=0.9657854835100722",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1039
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03269785150954508, alpha=0.03401089104420626, beta=0.9659891089557937",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1040
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03253880162194078, alpha=0.033653447736737827, beta=0.9663465522632622",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1041
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03300556240300912, alpha=0.03338511153342269, beta=0.9666148884665774",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1042
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.034333474818855896, alpha=0.03413731971302527, beta=0.9658626802869748",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1044
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.033751428412052614, alpha=0.033703548831918576, beta=0.9662964511680815",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-05-31",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1045
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03247570265875415, alpha=0.033246784319620484, beta=0.9667532156803795",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1046
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03525877975463677, alpha=0.03338395144109953, beta=0.9666160485589006",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1047
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03693003686973287, alpha=0.033501963060049496, beta=0.9664980369399506",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1048
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.045815920670567965, alpha=0.036284319655163745, beta=0.9637156803448363",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1049
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04784736798455845, alpha=0.03638157696337328, beta=0.9636184230366268",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1050
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04328846774504973, alpha=0.03546104389280984, beta=0.9645389561071902",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1051
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.039782469331774414, alpha=0.03488755534990695, beta=0.9651124446500932",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1052
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04246110534213514, alpha=0.03549520461250301, beta=0.9645047953874971",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1053
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05022014459426129, alpha=0.037133184267457785, beta=0.9628668157325423",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1054
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04502866823430726, alpha=0.03642481410547207, beta=0.963575185894528",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1056
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0408688357598613, alpha=0.034982778960605636, beta=0.9650172210393944",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-12",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1057
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04659822334293327, alpha=0.03627948024321101, beta=0.9637205197567891",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1058
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05347344993034589, alpha=0.03822482049662449, beta=0.9617751795033755",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1059
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0530043906971841, alpha=0.03828511884448983, beta=0.9617148811555102",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-15",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1060
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05815616727122375, alpha=0.039214644656732814, beta=0.9607853553432673",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-16",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1061
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.052318000396287916, alpha=0.03818984935265501, beta=0.9618101506473451",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1062
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0458394498133153, alpha=0.036461483711944256, beta=0.9635385162880558",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1063
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04388810659893649, alpha=0.03647276762028328, beta=0.9635272323797167",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1064
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04443190807773827, alpha=0.03634218141788889, beta=0.9636578185821111",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1065
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04336881861049852, alpha=0.03639451521053486, beta=0.9636054847894652",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1066
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.050279920148870214, alpha=0.03806852244910797, beta=0.961931477550892",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-22",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1067
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05638979573369889, alpha=0.040735271217368, beta=0.959264728782632",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1069
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05561870652960911, alpha=0.040094662234027544, beta=0.9599053377659724",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1070
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05601055227592733, alpha=0.04046456861464114, beta=0.9595354313853589",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1071
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05886729150784509, alpha=0.04143782923876489, beta=0.9585621707612352",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1072
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.052261802728, alpha=0.03999026067529639, beta=0.9600097393247036",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1073
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05373936352013873, alpha=0.03971954268505713, beta=0.9602804573149429",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-06-29",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1074
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.08227648282895407, alpha=0.04910999114135783, beta=0.9508900088586422",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1076
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.10756060240052318, alpha=0.05492864634879584, beta=0.9450713536512042",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1077
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.09732236783691642, alpha=0.05418173956905531, beta=0.9458182604309447",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1078
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07207864737102568, alpha=0.04663733926544137, beta=0.9533626607345587",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1079
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.059918764620045195, alpha=0.04093330690853812, beta=0.9590666930914619",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1080
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06201824147859161, alpha=0.0409527787400522, beta=0.9590472212599479",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1081
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05445545963249836, alpha=0.0392369475964426, beta=0.9607630524035574",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1082
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04688254178377642, alpha=0.03748805557786975, beta=0.9625119444221303",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1083
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0474482069810788, alpha=0.03718478137047124, beta=0.9628152186295288",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1084
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.045373039593047636, alpha=0.036949434592590244, beta=0.9630505654074099",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1085
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.049176133945327494, alpha=0.03818259873705493, beta=0.9618174012629451",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1088
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05340764444491155, alpha=0.03872566412883714, beta=0.961274335871163",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1089
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05105974781538695, alpha=0.03857996127916039, beta=0.9614200387208397",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-15",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1090
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.053719874683976536, alpha=0.03692642653524803, beta=0.963073573464752",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-16",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1091
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.050907947766480215, alpha=0.036944171563423146, beta=0.9630558284365769",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1092
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04891222691702017, alpha=0.037279054510739866, beta=0.9627209454892601",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1093
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.048637635209570096, alpha=0.03798893770242656, beta=0.9620110622975735",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1094
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04006133336418704, alpha=0.034098090027504815, beta=0.9659019099724951",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1100
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03654155235622356, alpha=0.03170268529326127, beta=0.9682973147067387",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1101
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036058785671902, alpha=0.03205470632205221, beta=0.9679452936779478",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1102
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03863752966176277, alpha=0.032238131101176765, beta=0.9677618688988232",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1103
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04021896004330521, alpha=0.033260171167607454, beta=0.9667398288323926",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-29",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1104
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.032775495694192296, alpha=0.029700313365783756, beta=0.9702996866342163",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1105
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03425840261780035, alpha=0.03029576152524513, beta=0.969704238474755",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-07-31",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1106
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03473476472117189, alpha=0.03109133407766409, beta=0.9689086659223359",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1107
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03721789000442148, alpha=0.03129731003167079, beta=0.9687026899683293",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1108
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03678183059050986, alpha=0.02768115121330419, beta=0.9723188487866958",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1110
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036774468604426486, alpha=0.025589739478534573, beta=0.9744102605214654",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1111
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04198115423738468, alpha=0.02700792745872448, beta=0.9729920725412756",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1114
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06400404844253665, alpha=0.032466682079076006, beta=0.9675333179209241",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1116
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0560498130685963, alpha=0.02883845555799139, beta=0.9711615444420086",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1117
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05968181076802404, alpha=0.03285971555938325, beta=0.9671402844406168",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1119
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.05487090152691713, alpha=0.031197659994256326, beta=0.9688023400057437",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1120
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.055314540999356475, alpha=0.03072917483707944, beta=0.9692708251632562",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1123
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06080643742916312, alpha=0.02952926989176671, beta=0.9704707301082334",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1125
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0608111452567994, alpha=0.02994502998089859, beta=0.9700549700191015",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1126
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0616987025877401, alpha=0.03121036347461466, beta=0.9687896365256945",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1127
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06219291820065175, alpha=0.03256219535033091, beta=0.9674378046496691",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-22",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1128
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07326950781042868, alpha=0.03509840252733817, beta=0.9649015974726619",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1131
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07109111742500722, alpha=0.03176809989899463, beta=0.9682319001010267",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1132
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06867225302316199, alpha=0.029346240891308165, beta=0.9706537591094735",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1133
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.07009949406668395, alpha=0.031539291913641763, beta=0.9684607080871102",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1134
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0798810368426322, alpha=0.03318805693811245, beta=0.9668119430618876",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-08-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1136
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.030845486365275922, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1138
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04240169003940359, alpha=0.0177560926666553, beta=0.9822439155492092",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-02",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1139
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0284058461075779, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-03",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1140
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.029512150598359876, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1141
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.029431737579068844, alpha=2.3207898476486054e-13, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-05",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1142
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03020437005813331, alpha=4.497359707640119e-10, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1143
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.032055126801593, alpha=1.6675449222434815e-08, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1144
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03646853669540076, alpha=0.01729370199473728, beta=0.9827062980062222",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1145
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03369696623899386, alpha=5.5571296258693356e-14, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1147
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03428686212959753, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1148
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03833175385820449, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1150
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04135468854639947, alpha=1.7443541048543598e-10, beta=0.9999999999898148",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-14",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1151
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.044284795666455115, alpha=4.204991760556249e-11, beta=0.9999999999700422",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-15",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1152
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03724116211976386, alpha=8.582254416180811e-14, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-17",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1154
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.033514807934964704, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-18",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1155
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.034683032640052534, alpha=1.4505661560457763e-10, beta=0.9999999999115902",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1156
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036032208399000974, alpha=1.7418814969538812e-09, beta=0.9999999988835935",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1157
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03482249127731031, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1158
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03400042994993354, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-22",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1159
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.035298708014571405, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1160
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.034783522560946044, alpha=2.2285931796284755e-10, beta=0.9999999999769974",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1161
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03363038406365002, alpha=6.993118678149273e-10, beta=0.9999999994477847",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1163
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03381644504112061, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1164
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03292959455567606, alpha=4.132078818122623e-14, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1165
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03282007010442723, alpha=4.0138010422800507e-10, beta=0.9999999999998309",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1167
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03248607427716417, alpha=1.2514638287714003e-09, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1168
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03380213097615829, alpha=2.985584026395693e-09, beta=0.9999999999999352",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-04",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1171
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03729144308123377, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-06",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1173
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036566150642679214, alpha=2.8071518992588727e-10, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-07",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1174
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03804708624695301, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-08",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1175
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03717355104406452, alpha=1.359591342428306e-12, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-09",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1176
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.036336734247616465, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-10",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1177
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03716362371362975, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-11",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1178
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03882376440778884, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-13",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1180
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04316458079951947, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-19",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1186
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.0457561807766526, alpha=1.2872833280298763e-14, beta=0.9999999999999984",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-20",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1187
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.06165672357670148, alpha=0.02538455459591884, beta=0.9746154454048481",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-21",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1188
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.061142479652654645, alpha=0.027764483792851798, beta=0.9722355162071817",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-22",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1189
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04192491720062049, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-23",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1190
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.041813037598883565, alpha=4.973183979186481e-10, beta=0.999999999735557",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-24",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1191
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04216353501693303, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-25",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1192
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.04236857060677208, alpha=3.922124478074368e-11, beta=0.999999999971006",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-26",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1193
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03602793044411864, alpha=4.219090033765051e-09, beta=0.9999999961926479",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-27",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1194
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03652779756454865, alpha=9.027879883698651e-10, beta=0.9999999995003743",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-28",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1195
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.03793561420442131, alpha=1.286575463687655e-10, beta=0.9999999999180248",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-10-30",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1197
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.039812268166897334, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-01",
+    "innovation": "student_t",
+    "instrument": "ETH-USD",
+    "origin_index": 1199
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.017719044278443608, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-17",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1154
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.022112370313286417, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-20",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1157
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.021539249933299327, alpha=6.06951576846523e-16, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-21",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1158
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02091040139521461, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-22",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1159
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.021832801933594475, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-23",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1160
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02070273096399467, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-25",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1162
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.02004244284018145, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-09-26",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1163
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.01864393526419698, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-07",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1205
+  },
+  {
+    "error": "fit violated GARCH constraints: omega=0.019094308404696815, alpha=0.0, beta=1.0",
+    "error_type": "GarchFitError",
+    "forecast_date": "2024-11-08",
+    "innovation": "normal",
+    "instrument": "ETH-USD",
+    "origin_index": 1206
+  }
+]

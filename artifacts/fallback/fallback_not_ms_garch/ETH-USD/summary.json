@@ -1,0 +1,93 @@
+{
+  "engine": "python-statsmodels-markov-regression",
+  "fit_failure_count": 3,
+  "fit_success_count": 1322,
+  "fit_success_rate": 0.9977358490566037,
+  "forecast_count": 1325,
+  "instrument": "ETH-USD",
+  "model_label": "fallback_not_ms_garch",
+  "risk": {
+    "0.95": {
+      "christoffersen_conditional_coverage": {
+        "exceedances": 62,
+        "n_observations": 1322,
+        "p_value": 0.4361914820383379,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 1.6593479061139078,
+        "tail_probability": 0.050000000000000044,
+        "test": "christoffersen_conditional_coverage",
+        "valid": true
+      },
+      "christoffersen_independence": {
+        "exceedances": 62,
+        "n_observations": 1322,
+        "p_value": 0.239041357290828,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 1.3862384888345218,
+        "tail_probability": 0.050000000000000044,
+        "test": "christoffersen_independence",
+        "valid": true
+      },
+      "confidence": 0.95,
+      "fit_success_rate": 0.9977358490566037,
+      "kupiec": {
+        "exceedances": 62,
+        "n_observations": 1322,
+        "p_value": 0.6012535347096117,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.273109417279386,
+        "tail_probability": 0.050000000000000044,
+        "test": "kupiec_unconditional_coverage",
+        "valid": true
+      },
+      "mean_fz0_score": 2.0318275820986846,
+      "mean_var_quantile_loss": 0.3822129099249226,
+      "n_exceedances": 62,
+      "n_valid_forecasts": 1322
+    },
+    "0.99": {
+      "christoffersen_conditional_coverage": {
+        "exceedances": 11,
+        "n_observations": 1322,
+        "p_value": 0.7467251661791848,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.5841161566175259,
+        "tail_probability": 0.010000000000000009,
+        "test": "christoffersen_conditional_coverage",
+        "valid": true
+      },
+      "christoffersen_independence": {
+        "exceedances": 11,
+        "n_observations": 1322,
+        "p_value": 0.6673352465411669,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.1847349953675348,
+        "tail_probability": 0.010000000000000009,
+        "test": "christoffersen_independence",
+        "valid": true
+      },
+      "confidence": 0.99,
+      "fit_success_rate": 0.9977358490566037,
+      "kupiec": {
+        "exceedances": 11,
+        "n_observations": 1322,
+        "p_value": 0.5274090240885905,
+        "reason": null,
+        "reject_at_5pct": false,
+        "statistic": 0.3993811612499911,
+        "tail_probability": 0.010000000000000009,
+        "test": "kupiec_unconditional_coverage",
+        "valid": true
+      },
+      "mean_fz0_score": 2.4620078463904513,
+      "mean_var_quantile_loss": 0.11812872156010404,
+      "n_exceedances": 11,
+      "n_valid_forecasts": 1322
+    }
+  }
+}

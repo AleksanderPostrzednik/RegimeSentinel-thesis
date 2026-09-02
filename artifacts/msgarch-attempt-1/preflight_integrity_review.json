@@ -1,0 +1,122 @@
+{
+  "execution_commit": "9a252d5ddf8bcc7cb5ad82e62a301c0d74d38dd2",
+  "finding": "The raw ETH aggregate occupancy check was true because invalid attempts were filtered before aggregation. Recomputed occupancy is false; per-attempt validation and the failed gate were already correct.",
+  "fit_calls_reexecuted": 0,
+  "gate_effect": "unchanged_failed_for_both_instruments",
+  "generated_at_utc": "2026-08-18T16:08:22Z",
+  "instruments": {
+    "BTC-USD": {
+      "all_attempt_contracts_match": true,
+      "attempts": [
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 0,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 1,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 2,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 3,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 4,
+          "stored_errors": [],
+          "stored_success": true
+        }
+      ],
+      "occupancy_check_matches": true,
+      "recomputed_occupancy_check": true,
+      "stored_gate_passed": false,
+      "stored_occupancy_check": true
+    },
+    "ETH-USD": {
+      "all_attempt_contracts_match": true,
+      "attempts": [
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 0,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 1,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [
+            "state occupancy must be >= 0.05"
+          ],
+          "recomputed_success": false,
+          "start_index": 2,
+          "stored_errors": [
+            "state occupancy must be >= 0.05"
+          ],
+          "stored_success": false
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 3,
+          "stored_errors": [],
+          "stored_success": true
+        },
+        {
+          "matches": true,
+          "recomputed_errors": [],
+          "recomputed_success": true,
+          "start_index": 4,
+          "stored_errors": [],
+          "stored_success": true
+        }
+      ],
+      "occupancy_check_matches": false,
+      "recomputed_occupancy_check": false,
+      "stored_gate_passed": false,
+      "stored_occupancy_check": true
+    }
+  },
+  "oos_accessed": false,
+  "raw_preflight_preserved": true,
+  "run_id": "true-msgarch-attempt-1-20260818T153348Z",
+  "schema_version": 1,
+  "source_artifact": "preflight.json",
+  "source_sha256": "4b1c66efd3b2243a9352c5728855d45b02f6506cc0ab8ce9fc575adf983c7be9",
+  "thresholds": {
+    "minimum_state_occupancy": 0.05,
+    "transition_row_sum_tolerance": 1e-08
+  },
+  "verification_commit": "5b18876afea227c045bfb807ac2e0c228c183921"
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1200 620">
+<title id="title">PROVISIONAL — Fit success rate by instrument and provisional variant</title>
+<desc id="desc">PROVISIONAL — exploratory artifact summary; no canonical model selected and no superiority claim is made. Fit success rate</desc>
+<rect width="1200" height="620" fill="#ffffff"/>
+<text x="100" y="34" font-family="sans-serif" font-size="22" font-weight="600" fill="#17202a">Fit success rate by instrument and provisional variant</text>
+<text x="100" y="60" font-family="sans-serif" font-size="13" fill="#5b6670">PROVISIONAL — exploratory artifact summary; no canonical model selected and no superiority claim is made.</text>
+<line x1="100" y1="96" x2="100" y2="510" stroke="#34495e"/>
+<line x1="100" y1="510" x2="1160" y2="510" stroke="#34495e"/>
+<text transform="translate(24 303.0) rotate(-90)" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#34495e">Fit success rate</text>
+<line x1="100" y1="510.00" x2="1160" y2="510.00" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="515.00" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.00</text>
+<line x1="100" y1="427.20" x2="1160" y2="427.20" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="432.20" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.23</text>
+<line x1="100" y1="344.40" x2="1160" y2="344.40" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="349.40" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.46</text>
+<line x1="100" y1="261.60" x2="1160" y2="261.60" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="266.60" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.69</text>
+<line x1="100" y1="178.80" x2="1160" y2="178.80" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="183.80" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">0.92</text>
+<line x1="100" y1="96.00" x2="1160" y2="96.00" stroke="#d7dde2" stroke-width="1"/>
+<text x="88" y="101.00" text-anchor="end" font-family="sans-serif" font-size="12" fill="#34495e">1.15</text>
+<rect x="170.69" y="219.83" width="35.28" height="290.17" fill="#2f6f9f" data-series="fit success"><title>fit success: 0.806038</title></rect>
+<text x="188.33" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="188.33" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) Student-t</text>
+<rect x="347.36" y="150.00" width="35.28" height="360.00" fill="#2f6f9f" data-series="fit success"><title>fit success: 1.000000</title></rect>
+<text x="365.00" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="365.00" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) normal</text>
+<rect x="524.03" y="150.00" width="35.28" height="360.00" fill="#2f6f9f" data-series="fit success"><title>fit success: 1.000000</title></rect>
+<text x="541.67" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">BTC-USD</text>
+<text x="541.67" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">fallback_not_ms_garch</text>
+<rect x="700.69" y="205.97" width="35.28" height="304.03" fill="#2f6f9f" data-series="fit success"><title>fit success: 0.844528</title></rect>
+<text x="718.33" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="718.33" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) Student-t</text>
+<rect x="877.36" y="152.45" width="35.28" height="357.55" fill="#2f6f9f" data-series="fit success"><title>fit success: 0.993208</title></rect>
+<text x="895.00" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="895.00" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">GARCH(1,1) normal</text>
+<rect x="1054.03" y="150.82" width="35.28" height="359.18" fill="#2f6f9f" data-series="fit success"><title>fit success: 0.997736</title></rect>
+<text x="1071.67" y="534" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">ETH-USD</text>
+<text x="1071.67" y="550" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#34495e">fallback_not_ms_garch</text>
+<rect x="100.0" y="76" width="12" height="12" fill="#2f6f9f"/>
+<text x="118.0" y="87" font-family="sans-serif" font-size="12" fill="#34495e">fit success</text>
+</svg>
