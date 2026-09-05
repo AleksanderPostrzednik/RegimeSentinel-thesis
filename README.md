@@ -12,30 +12,47 @@ Baseline `GARCH(1,1)` wykonano dla obu instrumentów. `MSGARCH::FitML` działał
 
 Demo: [RegimeSentinel na GitHub Pages](https://aleksanderpostrzednik.github.io/RegimeSentinel/)
 
-Galeria przedstawia publiczny interfejs w trybie ciemnym, zaktualizowany 05.09.2026. Kadry obejmują pełne sekcje; kliknięcie obrazu otwiera go w pełnej rozdzielczości.
+Dwa widoki aplikacji: [monitoring dzienny](#monitoring-dzienny) i [wyniki badania](#wyniki-badania). Zrzuty z 05.09.2026, w trybie ciemnym. Kliknięcie obrazu otwiera pełną rozdzielczość.
 
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="screenshots/thesis-btc-overview-dark.png"><img src="screenshots/thesis-btc-overview-dark.png" alt="thesis-v1 — przegląd badania" width="100%"></a><br>
-      <sub>thesis-v1 — przegląd badania</sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="screenshots/thesis-eth-validation-dark.png"><img src="screenshots/thesis-eth-validation-dark.png" alt="thesis-v1 — walidacja i stan modelu" width="100%"></a><br>
-      <sub>thesis-v1 — walidacja i stan modelu</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <a href="screenshots/monitoring-btc-risk-dark.png"><img src="screenshots/monitoring-btc-risk-dark.png" alt="monitoring — ocena reżimu i ryzyko" width="100%"></a><br>
-      <sub>monitoring — ocena reżimu i ryzyko</sub>
-    </td>
-    <td width="50%" align="center" valign="top">
-      <a href="screenshots/monitoring-eth-history-dark.png"><img src="screenshots/monitoring-eth-history-dark.png" alt="monitoring — historia i pochodzenie" width="100%"></a><br>
-      <sub>monitoring — historia i pochodzenie</sub>
-    </td>
-  </tr>
-</table>
+### Monitoring dzienny
+
+**01 · Ocena reżimu i ryzyko**
+
+Odczyt ostatniej doby, prognoza reżimu oraz jednodniowe miary ryzyka dla BTC.
+
+<a href="screenshots/monitoring-btc-risk-dark.png"><img src="screenshots/monitoring-btc-risk-dark.png" alt="Monitoring BTC — ocena reżimu, prognoza oraz VaR i ES" width="100%"></a>
+
+**02 · Historia rynku**
+
+Cena ETH, dzienne zwroty i zmienność zrealizowana, wraz z rozwiniętym objaśnieniem wykresów.
+
+<a href="screenshots/monitoring-eth-history-dark.png"><img src="screenshots/monitoring-eth-history-dark.png" alt="Monitoring ETH — pełne wykresy historii i objaśnienia" width="100%"></a>
+
+**03 · Dane i model**
+
+Źródło i zakres obserwacji, identyfikator publikacji oraz rozróżnienie modelu reżimowego i GARCH.
+
+<a href="screenshots/monitoring-provenance-dark.png"><img src="screenshots/monitoring-provenance-dark.png" alt="Monitoring — rozwinięte pochodzenie danych i opis modeli" width="100%"></a>
+
+### Wyniki badania
+
+**04 · Reżimy na zamrożonych danych**
+
+Status badania, kompletność artefaktu oraz pełna historia ceny BTC z oznaczeniami reżimów.
+
+<a href="screenshots/thesis-btc-overview-dark.png"><img src="screenshots/thesis-btc-overview-dark.png" alt="Badanie thesis-v1 — status, pochodzenie i wykres reżimów BTC" width="100%"></a>
+
+**05 · Ryzyko i walidacja**
+
+Miary ryzyka ETH, przekroczenia VaR i wyniki testów, z wyjaśnieniem ich interpretacji.
+
+<a href="screenshots/thesis-eth-validation-dark.png"><img src="screenshots/thesis-eth-validation-dark.png" alt="Badanie thesis-v1 — miary ryzyka ETH i pełna walidacja z objaśnieniem" width="100%"></a>
+
+**06 · Stan modelu i ograniczenia**
+
+Faktyczny model, pełny zapis techniczny i ostrzeżenia dotyczące wyświetlanego przebiegu.
+
+<a href="screenshots/thesis-model-health-dark.png"><img src="screenshots/thesis-model-health-dark.png" alt="Badanie thesis-v1 — rozwinięty zapis modelu i ograniczenia" width="100%"></a>
 
 ## Zawartość repozytorium
 
