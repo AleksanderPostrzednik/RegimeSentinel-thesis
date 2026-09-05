@@ -12,23 +12,25 @@ Baseline `GARCH(1,1)` wykonano dla obu instrumentów. `MSGARCH::FitML` działał
 
 Demo: [RegimeSentinel na GitHub Pages](https://aleksanderpostrzednik.github.io/RegimeSentinel/)
 
+Galeria przedstawia publiczny interfejs w trybie ciemnym, zaktualizowany 05.09.2026. Kadry obejmują pełne sekcje; kliknięcie obrazu otwiera go w pełnej rozdzielczości.
+
 <table>
   <tr>
-    <td width="50%" align="center">
+    <td width="50%" align="center" valign="top">
       <a href="screenshots/thesis-btc-overview-dark.png"><img src="screenshots/thesis-btc-overview-dark.png" alt="thesis-v1 — przegląd badania" width="100%"></a><br>
       <sub>thesis-v1 — przegląd badania</sub>
     </td>
-    <td width="50%" align="center">
+    <td width="50%" align="center" valign="top">
       <a href="screenshots/thesis-eth-validation-dark.png"><img src="screenshots/thesis-eth-validation-dark.png" alt="thesis-v1 — walidacja i stan modelu" width="100%"></a><br>
       <sub>thesis-v1 — walidacja i stan modelu</sub>
     </td>
   </tr>
   <tr>
-    <td width="50%" align="center">
-      <a href="screenshots/monitoring-btc-risk-dark.png"><img src="screenshots/monitoring-btc-risk-dark.png" alt="monitoring — ryzyko" width="100%"></a><br>
-      <sub>monitoring — ryzyko</sub>
+    <td width="50%" align="center" valign="top">
+      <a href="screenshots/monitoring-btc-risk-dark.png"><img src="screenshots/monitoring-btc-risk-dark.png" alt="monitoring — ocena reżimu i ryzyko" width="100%"></a><br>
+      <sub>monitoring — ocena reżimu i ryzyko</sub>
     </td>
-    <td width="50%" align="center">
+    <td width="50%" align="center" valign="top">
       <a href="screenshots/monitoring-eth-history-dark.png"><img src="screenshots/monitoring-eth-history-dark.png" alt="monitoring — historia i pochodzenie" width="100%"></a><br>
       <sub>monitoring — historia i pochodzenie</sub>
     </td>
